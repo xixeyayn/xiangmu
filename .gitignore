@@ -1,0 +1,11 @@
+# Project exclude paths
+/common/target/
+/consumer-management/consumer/target/
+/eureka-management/eureka-7081/target/
+/eureka-management/eureka-7082/target/
+/eureka-management/eureka-7083/target/
+/management/api/target/
+/management/mapper/target/
+/management/model/target/
+/management/service/target/
+/provider-management/prividet-8081/target/
