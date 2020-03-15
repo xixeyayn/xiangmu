@@ -1,10 +1,15 @@
 package com.aaa.xie.repast.fallback;
 
 import com.aaa.xie.repast.base.ResultData;
+import com.aaa.xie.repast.model.Address;
+import com.aaa.xie.repast.model.CouponHistory;
 import com.aaa.xie.repast.model.Member;
+import com.aaa.xie.repast.model.Order;
+import com.aaa.xie.repast.page.PageInfos;
 import com.aaa.xie.repast.service.IRepastService;
 import feign.hystrix.FallbackFactory;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Map;
 
@@ -31,6 +36,74 @@ public class RepastFallBackFactory implements FallbackFactory<IRepastService> {
                 System.out.println("熔断日志方法！");
                 return null;
             }
+            @Override
+            public ResultData updateMember(Member member){
+                System.out.println("更改个人信息失败");
+                return null;
+            }
+
+            @Override
+            public ResultData addAddress( Address address) {
+                System.out.println("增加地址成功");
+                return null;
+            }
+
+            @Override
+            public ResultData updateAddress(Address address) {
+                return null;
+            }
+
+            @Override
+            public ResultData deleteAddress(Address address) {
+                return null;
+            }
+
+            @Override
+            public ResultData selcetAddress(Address address) {
+                return null;
+            }
+
+            @Override
+            public ResultData deleteAllAddress(Integer[] id) {
+                return null;
+            }
+
+            @Override
+            public ResultData updateAddresStatus(Address address) {
+                return null;
+            }
+
+            @Override
+            public ResultData selectCoupon() {
+                return null;
+            }
+
+            @Override
+            public ResultData selcetCouponHistoty(CouponHistory couponHistory) {
+                return null;
+            }
+
+            @Override
+            public ResultData addCouponHistoty(CouponHistory couponHistory) {
+                return null;
+            }
+
+            @Override
+            public ResultData selcetMember(Member member) {
+                return null;
+            }
+
+            @Override
+            public ResultData selcetOrderByMemberId(Order order) {
+                return null;
+            }
+
+            @Override
+            public ResultData selcetCommentById(PageInfos pageInfos) {
+                return null;
+            }
+
+
         };
         return repastService;
     }

@@ -9,7 +9,10 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
 
 /**
  * @Company AAA软件教育
@@ -46,5 +49,25 @@ public class MemberController extends BaseController {
         }
         return super.loginFailed();
     }
+    @PostMapping("/updateMember")
+    public ResultData updateMember(Member member){
+
+        ResultData resultData = repastService.updateMember(member);
+     return resultData;
+    }
+    /*
+     * @Author Xie
+     * @Description 
+     *       查询个人信息
+     * @Date 17:20 2020/3/15
+     * @Param [member]
+     * @return com.aaa.xie.repast.base.ResultData
+     **/
+    @PostMapping("/selectMember")
+    public ResultData selcetMember(@RequestBody Member member){
+        return repastService.selcetMember(member);
+    }
+
+
 
 }

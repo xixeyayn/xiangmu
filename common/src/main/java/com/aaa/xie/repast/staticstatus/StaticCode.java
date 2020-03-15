@@ -16,6 +16,9 @@ public class StaticCode {
     public static final String FORMAT_DATE = "yyyy-MM-dd hh:mm:ss";
     // TODO 这里的ip是测试数据，上线的时候注意替换
     public static final String TEST_IP = "222.137.210.39";
-
+    public static final Integer HOUS=3600;
+    public static final Integer MINUTES=60;
+    public static final Integer DAYS=84600;
+    public static final Integer PAGESIZE=10;
 
 }

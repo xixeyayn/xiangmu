@@ -4,7 +4,14 @@ import lombok.*;
 import lombok.experimental.Accessors;
 
 import javax.persistence.*;
-
+/**
+ * @Author Xie
+ * @Description
+ *    登录历史
+ * @Date 18:43 2020/3/14
+ * @Param * @param null:
+ * @return * @return: null
+ **/
 @Table(name = "ums_member_login_log")
 @Data
 @AllArgsConstructor

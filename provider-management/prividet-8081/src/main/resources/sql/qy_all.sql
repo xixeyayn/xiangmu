@@ -154,6 +154,7 @@ CREATE TABLE `oms_order` (
   `confirm_status` int(1) DEFAULT NULL COMMENT '确认收货状态：0->未确认；1->已确认',
   `delete_status` int(1) NOT NULL DEFAULT '0' COMMENT '删除状态：0->未删除；1->已删除',
   `use_integration` int(11) DEFAULT NULL COMMENT '下单时使用的积分',
+  `flag` int(11) DEFAULT NULL COMMENT '订单类型',
   `payment_time` datetime DEFAULT NULL COMMENT '支付时间',
   `delivery_time` datetime DEFAULT NULL COMMENT '发货时间',
   `receive_time` datetime DEFAULT NULL COMMENT '确认收货时间',

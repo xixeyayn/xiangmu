@@ -38,7 +38,7 @@ public class LoginLogController extends CommonController<LoginLog> {
      * @return com.aaa.lee.repast.base.ResultData
      * @throws
     **/
-    @PostMapping("/add")
+    @PostMapping("/addlog")
     ResultData saveLog(@RequestBody Map map) {
         return super.add(map);
     }
