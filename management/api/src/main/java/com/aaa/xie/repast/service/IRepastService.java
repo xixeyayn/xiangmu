@@ -1,10 +1,7 @@
 package com.aaa.xie.repast.service;
 
 import com.aaa.xie.repast.base.ResultData;
-import com.aaa.xie.repast.model.Address;
-import com.aaa.xie.repast.model.CouponHistory;
-import com.aaa.xie.repast.model.Member;
-import com.aaa.xie.repast.model.Order;
+import com.aaa.xie.repast.model.*;
 import com.aaa.xie.repast.page.PageInfos;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -183,4 +180,24 @@ public interface IRepastService {
      **/
     @PostMapping("/selcetCommentById")
     ResultData selcetCommentById(PageInfos pageInfos);
+    /*
+     * @Author Xie
+     * @Description 
+     *       查询我的收藏地址
+     * @Date 19:18 2020/3/16
+     * @Param [collect]
+     * @return com.aaa.xie.repast.base.ResultData
+     **/
+    @PostMapping("/selectCollectByMemberId")
+    public ResultData selectCollectByMemberId(Collect collect);
+    /*
+     * @Author Xie
+     * @Description 
+     *       取消我的收藏
+     * @Date 19:20 2020/3/16
+     * @Param [collect]
+     * @return com.aaa.xie.repast.base.ResultData
+     **/
+    @PostMapping("/updateCollectByMemberId")
+    public ResultData updateCollectByMemberId(Collect collect);
 }

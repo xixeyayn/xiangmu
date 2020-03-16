@@ -21,97 +21,97 @@ public class Order {
     @Size(max = 20)
     @NotNull
     private Long id;
-    @Column(name = "order_sn")
+    @Column(name = "member_id")
     private Long memberId;
-    @Column(name = "order_sn")
+    @Column(name = "shop_id")
     private Long shopId;
-    @Column(name = "order_sn")
+    @Column(name = "group_promorion_id")
     private Long groupPromotionId;
-    @Column(name = "order_sn")
+    @Column(name = "coupon_id")
     private Long couponId;
     @Column(name = "order_sn")
     private String orderSn;
-    @Column(name = "order_sn")
+    @Column(name = "create_time")
     private Date createTime;
-    @Column(name = "order_sn")
+    @Column(name = "member_username")
     private String memberUsername;
-    @Column(name = "order_sn")
+    @Column(name = "total_amount")
     private BigDecimal totalAmount;
-    @Column(name = "order_sn")
+    @Column(name = "pay_amount")
     private BigDecimal payAmount;
-    @Column(name = "order_sn")
+    @Column(name = "freight_amount")
     private BigDecimal freightAmount;
-    @Column(name = "order_sn")
+    @Column(name = "promotion_amount")
     private BigDecimal promotionAmount;
-    @Column(name = "order_sn")
+    @Column(name = "intergration_amount")
     private BigDecimal integrationAmount;
-    @Column(name = "order_sn")
+    @Column(name = "coupon_amount")
     private BigDecimal couponAmount;
-    @Column(name = "order_sn")
+    @Column(name = "discountAmount")
     private BigDecimal discountAmount;
-    @Column(name = "order_sn")
+    @Column(name = "pay_type")
     private Integer payType;
-    @Column(name = "order_sn")
+    @Column(name = "source_type")
     private Integer sourceType;
-    @Column(name = "order_sn")
+    @Column(name = "status")
     private Integer status;
-    @Column(name = "order_sn")
+    @Column(name = "order_type")
     private Integer orderType;
-    @Column(name = "order_sn")
+    @Column(name = "deliveryCompany")
     private String deliveryCompany;
-    @Column(name = "order_sn")
+    @Column(name = "deliver_sn")
     private String deliverySn;
-    @Column(name = "order_sn")
+    @Column(name = "auto_confir_day")
     private Integer autoConfirmDay;
-    @Column(name = "order_sn")
+    @Column(name = "intergtation")
     private Integer integration;
-    @Column(name = "order_sn")
+    @Column(name = "growth")
     private Integer growth;
-    @Column(name = "order_sn")
+    @Column(name = "promotion_info")
     private String promotionInfo;
-    @Column(name = "order_sn")
+    @Column(name = "bill_type")
     private Integer billType;
-    @Column(name = "order_sn")
+    @Column(name = "bill_header")
     private String billHeader;
-    @Column(name = "order_sn")
+    @Column(name = "bill_content")
     private String billContent;
-    @Column(name = "order_sn")
+    @Column(name = "bill_receiver_phone")
     private String billReceiverPhone;
-    @Column(name = "order_sn")
+    @Column(name = "bill_receive_email")
     private String billReceiverEmail;
-    @Column(name = "order_sn")
+    @Column(name = "receive_name")
     private String receiverName;
-    @Column(name = "order_sn")
+    @Column(name = "receiver_post_phone")
     private String receiverPhone;
-    @Column(name = "order_sn")
+    @Column(name = "receiver_post_code")
     private String receiverPostCode;
-    @Column(name = "order_sn")
+    @Column(name = "receiver_province")
     private String receiverProvince;
-    @Column(name = "order_sn")
+    @Column(name = "receiver_city")
     private String receiverCity;
-    @Column(name = "order_sn")
+    @Column(name = "receiver_region")
     private String receiverRegion;
-    @Column(name = "order_sn")
+    @Column(name = "receiver_detail_address")
     private String receiverDetailAddress;
-    @Column(name = "order_sn")
+    @Column(name = "note")
     private String note;
-    @Column(name = "order_sn")
+    @Column(name = "confirm_status")
     private Integer confirmStatus;
-    @Column(name = "order_sn")
+    @Column(name = "delete_status")
     private Integer deleteStatus;
-    @Column(name = "order_sn")
+    @Column(name = "use_intergretion")
     private Integer useIntegration;
-    @Column(name = "order_sn")
+    @Column(name = "payment_time")
     private Date paymentTime;
-    @Column(name = "order_sn")
+    @Column(name = "delivery_time")
     private Date deliveryTime;
-    @Column(name = "order_sn")
+    @Column(name = "receive_time")
     private Date receiveTime;
-    @Column(name = "order_sn")
+    @Column(name = "comment_time")
     private Date commentTime;
-    @Column(name = "order_sn")
+    @Column(name = "modify_time")
     private Date modifyTime;
-    @Column(name = "order_sn")
+    @Column(name = "flag")
     private Integer flag;
 
 }

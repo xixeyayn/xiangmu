@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.ResultSet;
 import java.util.HashMap;
+import java.util.Map;
 
 /*  @  时间    :  2020/3/15 13:26:51
  *  @  类名    :  CouponController
@@ -30,13 +31,17 @@ public class CouponController extends CommonController<Coupon> {
      * @Author Xie
      * @Description 
      *       查询所有的正在发行的优惠券
+     * 可穿全部参数
      * @Date 13:59 2020/3/15
      * @Param []
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/selectCoupon")
     public ResultData selectCoupon(){
-        return selcet(new HashMap());
+        HashMap hashMap = new HashMap();
+        hashMap.put("type","0");
+        return selcet(hashMap);
     }
+
     
 }

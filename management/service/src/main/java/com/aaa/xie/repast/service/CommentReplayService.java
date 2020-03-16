@@ -5,6 +5,7 @@ import com.aaa.xie.repast.mapper.CommentReplayMapper;
 import com.aaa.xie.repast.model.Address;
 import com.aaa.xie.repast.model.CommentReplay;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.List;
  *  @  描述    :
  *
  */
+@Service
 public class CommentReplayService extends BaseService<CommentReplay> {
     @Autowired
     private CommentReplayMapper commentReplayMapper;

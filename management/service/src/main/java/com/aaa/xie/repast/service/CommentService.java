@@ -8,11 +8,13 @@ import com.aaa.xie.repast.model.Comment;
 import com.aaa.xie.repast.model.CommentReplay;
 import com.aaa.xie.repast.model.Member;
 import com.aaa.xie.repast.page.PageInfos;
+import com.aaa.xie.repast.staticstatus.StaticCode;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.common.Mapper;
 
+import java.util.Date;
 import java.util.List;
 
 /*  @  时间    :  2020/3/15 19:02:04
@@ -36,6 +38,7 @@ public class CommentService extends BaseService<Comment> {
  * @Author Xie
  * @Description 
  *       查找评价
+ *
  * @Date 19:32 2020/3/15
  * @Param [pageInfo]
  * @return com.github.pagehelper.PageInfo
@@ -61,8 +64,13 @@ public class CommentService extends BaseService<Comment> {
             pageInfos.setPageNum(pageInfo.getPageNum());
             pageInfos.setPageSize(pageInfo.getPageSize());
             return pageInfos;
+    }
 
 
 
+    //暂时不用
+    public Boolean addComment (Comment comment){
+        comment.setCreateTime(new Date(StaticCode.FORMAT_DATE));
+        return true;
     }
 }

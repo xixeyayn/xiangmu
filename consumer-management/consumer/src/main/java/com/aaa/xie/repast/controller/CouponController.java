@@ -8,6 +8,7 @@ import com.aaa.xie.repast.service.IRepastService;
 import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
@@ -17,6 +18,7 @@ import java.util.Map;
  *  @  描述    :
  *  集合查询所有优惠劵及自己的优惠券
  */
+@RestController
 public class CouponController extends BaseController {
     @Autowired
     private IRepastService repastService;

@@ -4,7 +4,9 @@ import com.aaa.xie.repast.base.BaseService;
 import com.aaa.xie.repast.mapper.AddressMapper;
 import com.aaa.xie.repast.mapper.CouponHistoryMapper;
 import com.aaa.xie.repast.model.Address;
+import com.aaa.xie.repast.model.Coupon;
 import com.aaa.xie.repast.model.CouponHistory;
+import com.aaa.xie.repast.staticstatus.StaticCode;
 import com.aaa.xie.repast.utils.DateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,6 +32,8 @@ import static com.aaa.xie.repast.staticstatus.StaticCode.FORMAT_DATE;
 public class CouponHistoryService extends BaseService<CouponHistory> {
     @Autowired
     private CouponHistoryMapper couponHistoryMapper;
+    @Autowired
+    private CouponService couponService;
 
     @Override
     public Mapper<CouponHistory> getMapper() {
@@ -45,8 +49,13 @@ public class CouponHistoryService extends BaseService<CouponHistory> {
      * @return java.util.List<com.aaa.xie.repast.model.CouponHistory>
      **/
     public Boolean addCouponHistory(CouponHistory couponHistory){
-        //使用时间为外界传
-        couponHistory.setCreateTime(new Date());
+
+        couponHistory.setCreateTime(new Date(FORMAT_DATE));
+        Coupon coupon = new Coupon();
+        coupon.setId(couponHistory.getCouponId());
+        coupon = couponService.queryOne(coupon);
+        coupon.setReceiveCount(coupon.getReceiveCount()+1);
+        couponService.add(coupon);
         //领取方式的判断
         Integer add = add(couponHistory);
         if(null!=add&&add>0){
@@ -65,6 +74,11 @@ public class CouponHistoryService extends BaseService<CouponHistory> {
     public Boolean updateCouponHistory(CouponHistory couponHistory){
         //使用时的判断
         couponHistory.setUseStatus(2);
+        Coupon coupon = new Coupon();
+        coupon.setId(couponHistory.getCouponId());
+        coupon = couponService.queryOne(coupon);
+        coupon.setUseCount(coupon.getUseCount()+1);
+        couponService.add(coupon);
         Integer update = update(couponHistory);
         if(null!=update&&update>0){
             return true;

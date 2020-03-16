@@ -2322,3 +2322,21 @@ CREATE TABLE `ums_shop_questionnaire_answer` (
 -- ----------------------------
 -- Records of ums_shop_questionnaire_answer
 -- ----------------------------
+
+-- ----------------------------
+-- Table structure for `ums_collect`
+-- ----------------------------
+DROP TABLE IF EXISTS `ums_collect`;
+CREATE TABLE `ums_collect` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `member_id` bigint(20) NOT NULL,
+  `product_id` bigint(20) DEFAULT NULL,
+  `shop_id` bigint(20) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL COMMENT '0已收藏可用商品，1已收藏可用店铺，2不可用',
+  `collect_start_time` date DEFAULT NULL COMMENT '储存时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of ums_collect
+-- ----------------------------

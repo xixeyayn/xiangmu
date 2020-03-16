@@ -1,10 +1,7 @@
 package com.aaa.xie.repast.fallback;
 
 import com.aaa.xie.repast.base.ResultData;
-import com.aaa.xie.repast.model.Address;
-import com.aaa.xie.repast.model.CouponHistory;
-import com.aaa.xie.repast.model.Member;
-import com.aaa.xie.repast.model.Order;
+import com.aaa.xie.repast.model.*;
 import com.aaa.xie.repast.page.PageInfos;
 import com.aaa.xie.repast.service.IRepastService;
 import feign.hystrix.FallbackFactory;
@@ -100,6 +97,16 @@ public class RepastFallBackFactory implements FallbackFactory<IRepastService> {
 
             @Override
             public ResultData selcetCommentById(PageInfos pageInfos) {
+                return null;
+            }
+
+            @Override
+            public ResultData selectCollectByMemberId(Collect collect) {
+                return null;
+            }
+
+            @Override
+            public ResultData updateCollectByMemberId(Collect collect) {
                 return null;
             }
 
