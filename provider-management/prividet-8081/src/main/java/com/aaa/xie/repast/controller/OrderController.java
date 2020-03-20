@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Map;
 
 /*  @  时间    :  2020/3/15 17:29:13
@@ -33,8 +34,13 @@ public class OrderController extends CommonController<Order> {
      * @Param [order]
      * @return com.aaa.xie.repast.base.ResultData
      **/
-    @PostMapping("/selcetOrderByMemberId")
-    public ResultData selcetOrderByMemberId(Map order){
-       return selcet(order);
+    @PostMapping("/selcetOrder")
+    public ResultData selcetOrder(Order order){
+        List<Order> orders = orderService.selectOrder(order);
+        if(null==orders.get(0)){
+            return operationFailed();
+        }
+        return operationSuccess(orders);
+
     }
 }

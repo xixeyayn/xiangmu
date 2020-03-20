@@ -65,12 +65,9 @@ public class CommentService extends BaseService<Comment> {
             pageInfos.setPageSize(pageInfo.getPageSize());
             return pageInfos;
     }
+    
 
 
 
-    //暂时不用
-    public Boolean addComment (Comment comment){
-        comment.setCreateTime(new Date(StaticCode.FORMAT_DATE));
-        return true;
-    }
+
 }

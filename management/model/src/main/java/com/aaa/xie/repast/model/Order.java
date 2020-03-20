@@ -8,6 +8,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
+
 @Table(name = "oms_order")
 @Data
 @AllArgsConstructor
@@ -113,5 +115,6 @@ public class Order {
     private Date modifyTime;
     @Column(name = "flag")
     private Integer flag;
+    private List<OrderItem> orderItem;
 
 }

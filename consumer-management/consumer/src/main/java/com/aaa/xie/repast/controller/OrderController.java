@@ -28,9 +28,9 @@ public class OrderController extends BaseController {
      * @Param [order]
      * @return com.aaa.xie.repast.base.ResultData
      **/
-    @PostMapping("/selcetOrderByMemberId")
-    public ResultData selcetOrderByMemberId(Order order){
-        return iRepastService.selcetOrderByMemberId(order);
+    @PostMapping("/selcetOrder")
+    public ResultData selcetOrder(Order order){
+        return iRepastService.selcetOrder(order);
 
     }
 }

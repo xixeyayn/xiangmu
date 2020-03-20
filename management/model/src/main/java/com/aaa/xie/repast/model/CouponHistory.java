@@ -43,4 +43,6 @@ public class CouponHistory {
     @Column(name = "order_sn")
     private String orderSn;
 
+    private Coupon coupon;
+
 }

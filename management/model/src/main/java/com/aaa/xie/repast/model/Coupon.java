@@ -57,5 +57,7 @@ public class Coupon {
     private String code;
     @Column(name = "member_level")
     private Integer memberLevel;
+    private CouponProductCategoryRelation couponProductCategoryRelation;
+    private CouponProductRelation couponProductRelation;
 
 }

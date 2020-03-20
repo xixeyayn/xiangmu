@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /*  @  时间    :  2020/3/15 13:27:10
@@ -40,8 +41,12 @@ public class CouponHistoryController extends CommonController<CouponHistory> {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/selcetCouponHistory")
-    public ResultData selcetCouponHistoty(Map couponHistory){
-        return selcet(couponHistory);
+    public ResultData selcetCouponHistoty(CouponHistory couponHistory){
+        List<CouponHistory> couponHistories = couponHistoryService.selcetCouponHistoty(couponHistory);
+        if(null==couponHistories.get(0)){
+            return operationFailed();
+        }
+        return operationSuccess(couponHistories);
     }
     /*
      * @Author Xie
@@ -61,21 +66,5 @@ public class CouponHistoryController extends CommonController<CouponHistory> {
         }
 
     }
-    /*
-     * @Author Xie
-     * @Description 
-     *       使用优惠券
-     * @Date 17:26 2020/3/15
-     * @Param [couponHistory]
-     * @return com.aaa.xie.repast.base.ResultData
-     **/
-    @PostMapping("/updateCouponHistory")
-    public ResultData updateCouponHistoty(CouponHistory couponHistory){
-        Boolean aBoolean = couponHistoryService.updateCouponHistory(couponHistory);
-        if(aBoolean==true){
-            return super.operationSuccess();
-        }else {
-            return super.operationFailed();
-        }
-    }
+
 }

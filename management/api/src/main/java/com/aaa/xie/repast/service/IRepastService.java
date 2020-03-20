@@ -168,8 +168,8 @@ public interface IRepastService {
      * @Param [order]
      * @return com.aaa.xie.repast.base.ResultData
      **/
-    @PostMapping("/selcetOrderByMemberId")
-    ResultData selcetOrderByMemberId(Order order);
+    @PostMapping("/selcetOrder")
+    ResultData selcetOrder(Order order);
     /*
      * @Author Xie
      * @Description 
@@ -200,4 +200,24 @@ public interface IRepastService {
      **/
     @PostMapping("/updateCollectByMemberId")
     public ResultData updateCollectByMemberId(Collect collect);
+    /*
+     * @Author Xie
+     * @Description 
+     *       查询会员等级
+     * @Date 1:36 2020/3/20
+     * @Param []
+     * @return com.aaa.xie.repast.base.ResultData
+     **/
+    @PostMapping("/selectMemberLevel")
+    public ResultData selectMemberLevel();
+    /*
+     * @Author Xie
+     * @Description 
+     *       查询个人详细信息
+     * @Date 1:39 2020/3/20
+     * @Param [memberStatisticsInfo]
+     * @return com.aaa.xie.repast.base.ResultData
+     **/
+    @PostMapping("/selectmemberStatisticsInfoByMemberId")
+    public ResultData selectmemberStatisticsInfoByMemberId(MemberStatisticsInfo memberStatisticsInfo);
 }

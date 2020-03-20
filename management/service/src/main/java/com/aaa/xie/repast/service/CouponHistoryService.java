@@ -48,18 +48,28 @@ public class CouponHistoryService extends BaseService<CouponHistory> {
      * @Param [couponHistory]
      * @return java.util.List<com.aaa.xie.repast.model.CouponHistory>
      **/
-    public Boolean addCouponHistory(CouponHistory couponHistory){
-
+    public Boolean addCouponHistory(CouponHistory couponHistory)  {
         couponHistory.setCreateTime(new Date(FORMAT_DATE));
         Coupon coupon = new Coupon();
         coupon.setId(couponHistory.getCouponId());
         coupon = couponService.queryOne(coupon);
+        if(coupon.getEndTime().getSeconds()< new Date(FORMAT_DATE).getSeconds())
+            return false;
         coupon.setReceiveCount(coupon.getReceiveCount()+1);
-        couponService.add(coupon);
+        //更改优惠劵领取数量
+            Integer update = couponService.update(coupon);
         //领取方式的判断
+        couponHistory.setUseStatus(0);
         Integer add = add(couponHistory);
-        if(null!=add&&add>0){
+        if(null!=add&&add>0&&update<=0){
             return true;
+        }else {
+            try {
+                throw new Exception("出现错误");
+            }
+            catch(Exception e) {
+                e.printStackTrace();
+            }
         }
         return false;
     }
@@ -67,13 +77,14 @@ public class CouponHistoryService extends BaseService<CouponHistory> {
      * @Author Xie
      * @Description 
      *       使用优惠券的操作
+     * //等待优化
      * @Date 13:52 2020/3/15
      * @Param [couponHistory]
      * @return java.lang.Boolean
      **/
     public Boolean updateCouponHistory(CouponHistory couponHistory){
         //使用时的判断
-        couponHistory.setUseStatus(2);
+        couponHistory.setUseStatus(1);
         Coupon coupon = new Coupon();
         coupon.setId(couponHistory.getCouponId());
         coupon = couponService.queryOne(coupon);
@@ -84,6 +95,22 @@ public class CouponHistoryService extends BaseService<CouponHistory> {
             return true;
         }
         return false;
+    }
+    /*
+     * @Author Xie
+     * @Description 
+     *       查询我的优惠券
+     * @Date 6:01 2020/3/21
+     * @Param [couponHistory]
+     * @return java.util.List<com.aaa.xie.repast.model.CouponHistory>
+     **/
+    public List<CouponHistory> selcetCouponHistoty(CouponHistory couponHistory){
+        List<CouponHistory> couponHistories = queryList(couponHistory);
+        for (CouponHistory c:couponHistories) {
+            Coupon coupon = new Coupon();
+            c.setCoupon(couponService.selectCoupon( coupon.setId(c.getCouponId())));
+        }
+        return couponHistories;
     }
     /*
      * @Author Xie

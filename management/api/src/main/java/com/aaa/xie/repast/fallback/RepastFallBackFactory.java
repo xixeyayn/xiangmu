@@ -91,7 +91,7 @@ public class RepastFallBackFactory implements FallbackFactory<IRepastService> {
             }
 
             @Override
-            public ResultData selcetOrderByMemberId(Order order) {
+            public ResultData selcetOrder(Order order) {
                 return null;
             }
 
@@ -107,6 +107,16 @@ public class RepastFallBackFactory implements FallbackFactory<IRepastService> {
 
             @Override
             public ResultData updateCollectByMemberId(Collect collect) {
+                return null;
+            }
+
+            @Override
+            public ResultData selectMemberLevel() {
+                return null;
+            }
+
+            @Override
+            public ResultData selectmemberStatisticsInfoByMemberId(MemberStatisticsInfo memberStatisticsInfo) {
                 return null;
             }
 

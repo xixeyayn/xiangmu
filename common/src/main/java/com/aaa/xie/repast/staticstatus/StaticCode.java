@@ -20,5 +20,35 @@ public class StaticCode {
     public static final Integer MINUTES=60;
     public static final Integer DAYS=84600;
     public static final Integer PAGESIZE=10;
+    /**
+     * 常量nx
+     */
+    public static final String NX = "nx";
+
+    /**
+     * 常量xx
+     */
+    public static final String XX = "xx";
+
+    /**
+     * 常量ex
+     */
+    public static final String EX = "ex";
+
+    /**
+     * 常量px
+     */
+    public static final String PX = "px";
+
+    /**
+     * 常量ok
+     */
+    public static final String OK = "OK";
+
+    /**
+     * 常量no
+     */
+    public static final String NO = "NO";
+
 
 }
