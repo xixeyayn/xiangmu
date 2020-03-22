@@ -1,176 +1,58 @@
 package com.aaa.xie.repast.model;
 
+import lombok.*;
+import lombok.experimental.Accessors;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Date;
-
+@Table(name = "ums_member_statistics_info")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Accessors(chain = true)
+@ToString
+@EqualsAndHashCode
 public class MemberStatisticsInfo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Size(max = 20)
+    @NotNull
     private Long id;
-
+    @Column(name = "shop_id")
     private Long shopId;
-
+    @Column(name = "member_id")
     private Long memberId;
-
+    @Column(name = "consume_amount")
     private BigDecimal consumeAmount;
-
+    @Column(name = "order_count")
     private Integer orderCount;
-
+    @Column(name = "coupon_count")
     private Integer couponCount;
-
+    @Column(name = "comment_count")
     private Integer commentCount;
-
+    @Column(name = "return_order_count")
     private Integer returnOrderCount;
-
+    @Column(name = "login_count")
     private Integer loginCount;
-
+    @Column(name = "attend_count")
     private Integer attendCount;
-
+    @Column(name = "fans_count")
     private Integer fansCount;
-
+    @Column(name = "collect_product_count")
     private Integer collectProductCount;
-
+    @Column(name = "collect_subject_count")
     private Integer collectSubjectCount;
-
+    @Column(name = "collect_topic_count")
     private Integer collectTopicCount;
-
+    @Column(name = "collect_comment_count")
     private Integer collectCommentCount;
-
+    @Column(name = "invite_friend_count")
     private Integer inviteFriendCount;
-
+    @Column(name = "recent_order_time")
     private Date recentOrderTime;
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getShopId() {
-        return shopId;
-    }
-
-    public void setShopId(Long shopId) {
-        this.shopId = shopId;
-    }
-
-    public Long getMemberId() {
-        return memberId;
-    }
-
-    public void setMemberId(Long memberId) {
-        this.memberId = memberId;
-    }
-
-    public BigDecimal getConsumeAmount() {
-        return consumeAmount;
-    }
-
-    public void setConsumeAmount(BigDecimal consumeAmount) {
-        this.consumeAmount = consumeAmount;
-    }
-
-    public Integer getOrderCount() {
-        return orderCount;
-    }
-
-    public void setOrderCount(Integer orderCount) {
-        this.orderCount = orderCount;
-    }
-
-    public Integer getCouponCount() {
-        return couponCount;
-    }
-
-    public void setCouponCount(Integer couponCount) {
-        this.couponCount = couponCount;
-    }
-
-    public Integer getCommentCount() {
-        return commentCount;
-    }
-
-    public void setCommentCount(Integer commentCount) {
-        this.commentCount = commentCount;
-    }
-
-    public Integer getReturnOrderCount() {
-        return returnOrderCount;
-    }
-
-    public void setReturnOrderCount(Integer returnOrderCount) {
-        this.returnOrderCount = returnOrderCount;
-    }
-
-    public Integer getLoginCount() {
-        return loginCount;
-    }
-
-    public void setLoginCount(Integer loginCount) {
-        this.loginCount = loginCount;
-    }
-
-    public Integer getAttendCount() {
-        return attendCount;
-    }
-
-    public void setAttendCount(Integer attendCount) {
-        this.attendCount = attendCount;
-    }
-
-    public Integer getFansCount() {
-        return fansCount;
-    }
-
-    public void setFansCount(Integer fansCount) {
-        this.fansCount = fansCount;
-    }
-
-    public Integer getCollectProductCount() {
-        return collectProductCount;
-    }
-
-    public void setCollectProductCount(Integer collectProductCount) {
-        this.collectProductCount = collectProductCount;
-    }
-
-    public Integer getCollectSubjectCount() {
-        return collectSubjectCount;
-    }
-
-    public void setCollectSubjectCount(Integer collectSubjectCount) {
-        this.collectSubjectCount = collectSubjectCount;
-    }
-
-    public Integer getCollectTopicCount() {
-        return collectTopicCount;
-    }
-
-    public void setCollectTopicCount(Integer collectTopicCount) {
-        this.collectTopicCount = collectTopicCount;
-    }
-
-    public Integer getCollectCommentCount() {
-        return collectCommentCount;
-    }
-
-    public void setCollectCommentCount(Integer collectCommentCount) {
-        this.collectCommentCount = collectCommentCount;
-    }
-
-    public Integer getInviteFriendCount() {
-        return inviteFriendCount;
-    }
-
-    public void setInviteFriendCount(Integer inviteFriendCount) {
-        this.inviteFriendCount = inviteFriendCount;
-    }
-
-    public Date getRecentOrderTime() {
-        return recentOrderTime;
-    }
-
-    public void setRecentOrderTime(Date recentOrderTime) {
-        this.recentOrderTime = recentOrderTime;
-    }
 }

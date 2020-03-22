@@ -38,12 +38,7 @@
     <result column="product_category_name" jdbcType="VARCHAR" property="productCategoryName" />
     <result column="currency" jdbcType="TINYINT" property="currency" />
   </resultMap>
-  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.aaa.xie.repast.model.PmsProductWithBLOBs">
-    <result column="description" jdbcType="LONGVARCHAR" property="description" />
-    <result column="detail_desc" jdbcType="LONGVARCHAR" property="detailDesc" />
-    <result column="detail_html" jdbcType="LONGVARCHAR" property="detailHtml" />
-    <result column="detail_mobile_html" jdbcType="LONGVARCHAR" property="detailMobileHtml" />
-  </resultMap>
+
   <sql id="Base_Column_List">
     id, shop_id, brand_id, product_category_id, product_attribute_category_id, name, 
     pic, product_sn, delete_status, publish_status, new_status, recommand_status, sort, 

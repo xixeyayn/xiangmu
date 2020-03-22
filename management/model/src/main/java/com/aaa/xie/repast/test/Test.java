@@ -1,9 +1,12 @@
 package com.aaa.xie.repast.test;
 
+import com.aaa.xie.repast.model.Collect;
 import com.aaa.xie.repast.model.Member;
 import com.aaa.xie.repast.utils.DateUtil;
 import com.aaa.xie.repast.utils.JSONUtil;
 import com.aaa.xie.repast.utils.Map2BeanUtil;
+import com.aaa.xie.repast.utils.StringUtil;
+import org.springframework.util.StringUtils;
 
 import java.lang.reflect.Field;
 import java.text.DateFormat;
@@ -57,13 +60,20 @@ public class Test {
 //        System.out.println(dateNow);
 //        Date date = new Date();
 //        System.out.println(date);
-        Date date1 = new Date();
-
-//        System.currentTimeMillis();
-        int seconds = date1.getSeconds();
-        System.out.println(seconds);
+//        Date date1 = new Date();
+//
+////        System.currentTimeMillis();
+//        int seconds = date1.getSeconds();
+//        System.out.println(seconds);
 //        System.out.println(date.getTime());
 //        System.out.println(System.currentTimeMillis() > date.getTime());
-
+//      Collect collect = new Collect();
+////
+//     System.out.println(StringUtil.isEmpty(collect));
+////        System.out.println(collect.toString());
+//      collect.setStatus(1);
+//     System.out.println(StringUtil.isNull(collect));
+////        System.out.println(collect.toString());
+//            Object o = new Object();
     }
 }

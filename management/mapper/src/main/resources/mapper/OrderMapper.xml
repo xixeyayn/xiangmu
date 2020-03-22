@@ -48,69 +48,69 @@
     <result column="receive_time" jdbcType="TIMESTAMP" property="receiveTime" />
     <result column="comment_time" jdbcType="TIMESTAMP" property="commentTime" />
     <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
-    <association property="orderItem" javaType="com.aaa.xie.repast.model.OrderItem" >
-      <id column="id" jdbcType="BIGINT" property="id" />
-      <result column="order_id" jdbcType="BIGINT" property="orderId" />
-      <result column="order_sn" jdbcType="VARCHAR" property="orderSn" />
-      <result column="product_id" jdbcType="BIGINT" property="productId" />
-      <result column="product_pic" jdbcType="VARCHAR" property="productPic" />
-      <result column="product_name" jdbcType="VARCHAR" property="productName" />
-      <result column="product_brand" jdbcType="VARCHAR" property="productBrand" />
-      <result column="product_sn" jdbcType="VARCHAR" property="productSn" />
-      <result column="product_price" jdbcType="DECIMAL" property="productPrice" />
-      <result column="product_quantity" jdbcType="INTEGER" property="productQuantity" />
-      <result column="product_sku_id" jdbcType="BIGINT" property="productSkuId" />
-      <result column="product_sku_code" jdbcType="VARCHAR" property="productSkuCode" />
-      <result column="product_category_id" jdbcType="BIGINT" property="productCategoryId" />
-      <result column="sp1" jdbcType="VARCHAR" property="sp1" />
-      <result column="sp2" jdbcType="VARCHAR" property="sp2" />
-      <result column="sp3" jdbcType="VARCHAR" property="sp3" />
-      <result column="promotion_name" jdbcType="VARCHAR" property="promotionName" />
-      <result column="promotion_amount" jdbcType="DECIMAL" property="promotionAmount" />
-      <result column="coupon_amount" jdbcType="DECIMAL" property="couponAmount" />
-      <result column="integration_amount" jdbcType="DECIMAL" property="integrationAmount" />
-      <result column="real_amount" jdbcType="DECIMAL" property="realAmount" />
-      <result column="gift_integration" jdbcType="INTEGER" property="giftIntegration" />
-      <result column="gift_growth" jdbcType="INTEGER" property="giftGrowth" />
-      <result column="product_attr" jdbcType="VARCHAR" property="productAttr" />
-    <collection property="product" ofType="com.aaa.xie.repast.model.Product">
-      <id column="id" jdbcType="BIGINT" property="id" />
-      <result column="shop_id" jdbcType="BIGINT" property="shopId" />
-      <result column="brand_id" jdbcType="BIGINT" property="brandId" />
-      <result column="product_category_id" jdbcType="BIGINT" property="productCategoryId" />
-      <result column="product_attribute_category_id" jdbcType="BIGINT" property="productAttributeCategoryId" />
-      <result column="name" jdbcType="VARCHAR" property="name" />
-      <result column="pic" jdbcType="VARCHAR" property="pic" />
-      <result column="product_sn" jdbcType="VARCHAR" property="productSn" />
-      <result column="delete_status" jdbcType="INTEGER" property="deleteStatus" />
-      <result column="publish_status" jdbcType="INTEGER" property="publishStatus" />
-      <result column="new_status" jdbcType="INTEGER" property="newStatus" />
-      <result column="recommand_status" jdbcType="INTEGER" property="recommandStatus" />
-      <result column="sort" jdbcType="INTEGER" property="sort" />
-      <result column="sale" jdbcType="INTEGER" property="sale" />
-      <result column="price" jdbcType="DECIMAL" property="price" />
-      <result column="promotion_price" jdbcType="DECIMAL" property="promotionPrice" />
-      <result column="gift_point" jdbcType="INTEGER" property="giftPoint" />
-      <result column="sub_title" jdbcType="VARCHAR" property="subTitle" />
-      <result column="original_price" jdbcType="DECIMAL" property="originalPrice" />
-      <result column="stock" jdbcType="INTEGER" property="stock" />
-      <result column="low_stock" jdbcType="INTEGER" property="lowStock" />
-      <result column="unit" jdbcType="VARCHAR" property="unit" />
-      <result column="weight" jdbcType="DECIMAL" property="weight" />
-      <result column="service_ids" jdbcType="VARCHAR" property="serviceIds" />
-      <result column="keywords" jdbcType="VARCHAR" property="keywords" />
-      <result column="note" jdbcType="VARCHAR" property="note" />
-      <result column="album_id" jdbcType="BIGINT" property="albumId" />
-      <result column="detail_title" jdbcType="VARCHAR" property="detailTitle" />
-      <result column="promotion_start_time" jdbcType="TIMESTAMP" property="promotionStartTime" />
-      <result column="promotion_end_time" jdbcType="TIMESTAMP" property="promotionEndTime" />
-      <result column="promotion_per_limit" jdbcType="INTEGER" property="promotionPerLimit" />
-      <result column="promotion_type" jdbcType="INTEGER" property="promotionType" />
-      <result column="brand_name" jdbcType="VARCHAR" property="brandName" />
-      <result column="product_category_name" jdbcType="VARCHAR" property="productCategoryName" />
-      <result column="currency" jdbcType="TINYINT" property="currency" />
-    </collection>
-  </association>
+<!--    <association property="orderItem" javaType="com.aaa.xie.repast.model.OrderItem" >-->
+<!--      <id column="id" jdbcType="BIGINT" property="id" />-->
+<!--      <result column="order_id" jdbcType="BIGINT" property="orderId" />-->
+<!--      <result column="order_sn" jdbcType="VARCHAR" property="orderSn" />-->
+<!--      <result column="product_id" jdbcType="BIGINT" property="productId" />-->
+<!--      <result column="product_pic" jdbcType="VARCHAR" property="productPic" />-->
+<!--      <result column="product_name" jdbcType="VARCHAR" property="productName" />-->
+<!--      <result column="product_brand" jdbcType="VARCHAR" property="productBrand" />-->
+<!--      <result column="product_sn" jdbcType="VARCHAR" property="productSn" />-->
+<!--      <result column="product_price" jdbcType="DECIMAL" property="productPrice" />-->
+<!--      <result column="product_quantity" jdbcType="INTEGER" property="productQuantity" />-->
+<!--      <result column="product_sku_id" jdbcType="BIGINT" property="productSkuId" />-->
+<!--      <result column="product_sku_code" jdbcType="VARCHAR" property="productSkuCode" />-->
+<!--      <result column="product_category_id" jdbcType="BIGINT" property="productCategoryId" />-->
+<!--      <result column="sp1" jdbcType="VARCHAR" property="sp1" />-->
+<!--      <result column="sp2" jdbcType="VARCHAR" property="sp2" />-->
+<!--      <result column="sp3" jdbcType="VARCHAR" property="sp3" />-->
+<!--      <result column="promotion_name" jdbcType="VARCHAR" property="promotionName" />-->
+<!--      <result column="promotion_amount" jdbcType="DECIMAL" property="promotionAmount" />-->
+<!--      <result column="coupon_amount" jdbcType="DECIMAL" property="couponAmount" />-->
+<!--      <result column="integration_amount" jdbcType="DECIMAL" property="integrationAmount" />-->
+<!--      <result column="real_amount" jdbcType="DECIMAL" property="realAmount" />-->
+<!--      <result column="gift_integration" jdbcType="INTEGER" property="giftIntegration" />-->
+<!--      <result column="gift_growth" jdbcType="INTEGER" property="giftGrowth" />-->
+<!--      <result column="product_attr" jdbcType="VARCHAR" property="productAttr" />-->
+<!--    <collection property="product" ofType="com.aaa.xie.repast.model.Product">-->
+<!--      <id column="id" jdbcType="BIGINT" property="id" />-->
+<!--      <result column="shop_id" jdbcType="BIGINT" property="shopId" />-->
+<!--      <result column="brand_id" jdbcType="BIGINT" property="brandId" />-->
+<!--      <result column="product_category_id" jdbcType="BIGINT" property="productCategoryId" />-->
+<!--      <result column="product_attribute_category_id" jdbcType="BIGINT" property="productAttributeCategoryId" />-->
+<!--      <result column="name" jdbcType="VARCHAR" property="name" />-->
+<!--      <result column="pic" jdbcType="VARCHAR" property="pic" />-->
+<!--      <result column="product_sn" jdbcType="VARCHAR" property="productSn" />-->
+<!--      <result column="delete_status" jdbcType="INTEGER" property="deleteStatus" />-->
+<!--      <result column="publish_status" jdbcType="INTEGER" property="publishStatus" />-->
+<!--      <result column="new_status" jdbcType="INTEGER" property="newStatus" />-->
+<!--      <result column="recommand_status" jdbcType="INTEGER" property="recommandStatus" />-->
+<!--      <result column="sort" jdbcType="INTEGER" property="sort" />-->
+<!--      <result column="sale" jdbcType="INTEGER" property="sale" />-->
+<!--      <result column="price" jdbcType="DECIMAL" property="price" />-->
+<!--      <result column="promotion_price" jdbcType="DECIMAL" property="promotionPrice" />-->
+<!--      <result column="gift_point" jdbcType="INTEGER" property="giftPoint" />-->
+<!--      <result column="sub_title" jdbcType="VARCHAR" property="subTitle" />-->
+<!--      <result column="original_price" jdbcType="DECIMAL" property="originalPrice" />-->
+<!--      <result column="stock" jdbcType="INTEGER" property="stock" />-->
+<!--      <result column="low_stock" jdbcType="INTEGER" property="lowStock" />-->
+<!--      <result column="unit" jdbcType="VARCHAR" property="unit" />-->
+<!--      <result column="weight" jdbcType="DECIMAL" property="weight" />-->
+<!--      <result column="service_ids" jdbcType="VARCHAR" property="serviceIds" />-->
+<!--      <result column="keywords" jdbcType="VARCHAR" property="keywords" />-->
+<!--      <result column="note" jdbcType="VARCHAR" property="note" />-->
+<!--      <result column="album_id" jdbcType="BIGINT" property="albumId" />-->
+<!--      <result column="detail_title" jdbcType="VARCHAR" property="detailTitle" />-->
+<!--      <result column="promotion_start_time" jdbcType="TIMESTAMP" property="promotionStartTime" />-->
+<!--      <result column="promotion_end_time" jdbcType="TIMESTAMP" property="promotionEndTime" />-->
+<!--      <result column="promotion_per_limit" jdbcType="INTEGER" property="promotionPerLimit" />-->
+<!--      <result column="promotion_type" jdbcType="INTEGER" property="promotionType" />-->
+<!--      <result column="brand_name" jdbcType="VARCHAR" property="brandName" />-->
+<!--      <result column="product_category_name" jdbcType="VARCHAR" property="productCategoryName" />-->
+<!--      <result column="currency" jdbcType="TINYINT" property="currency" />-->
+<!--    </collection>-->
+<!--  </association>-->
   </resultMap>
   <sql id="Base_Column_List">
     id, member_id, shop_id, group_promotion_id, coupon_id, order_sn, create_time, member_username, 
@@ -122,7 +122,7 @@
     confirm_status, delete_status, use_integration, payment_time, delivery_time, receive_time, 
     comment_time, modify_time
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select * from oms_order o  LEFT JOIN oms_order_item t on t.order_id=o.id LEFT JOIN pms_product p on t.product_id=p.id where o.member_id=#{member_id,jdbcType=BIGINT}
-  </select>
+<!--  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">-->
+<!--    select * from oms_order o  LEFT JOIN oms_order_item t on t.order_id=o.id LEFT JOIN pms_product p on t.product_id=p.id where o.member_id=#{member_id,jdbcType=BIGINT}-->
+<!--  </select>-->
 </mapper>

@@ -12,15 +12,15 @@ import redis.clients.jedis.Jedis;
  * @Date Create in 2020/3/13 11:00
  * @Description
  **/
-@Configuration
+//@Configuration
 public class RedisSingleConfig {
 
-    @Autowired
-    private RedisSingleProperties redisSingleProperties;
-
-    @Bean
-    public Jedis getJedis() {
-        String[] hostAndPort = redisSingleProperties.getNode().split(":");
-        return new Jedis(hostAndPort[0], Integer.parseInt(hostAndPort[1]), redisSingleProperties.getCommandTimeout(), false);
-    }
+//    @Autowired
+//    private RedisSingleProperties redisSingleProperties;
+//
+//    @Bean
+//    public Jedis getJedis() {
+//        String[] hostAndPort = redisSingleProperties.getNode().split(":");
+//        return new Jedis(hostAndPort[0], Integer.parseInt(hostAndPort[1]), redisSingleProperties.getCommandTimeout(), false);
+//    }
 }

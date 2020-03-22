@@ -6,6 +6,7 @@ import com.aaa.xie.repast.model.Coupon;
 import com.aaa.xie.repast.model.CouponHistory;
 import com.aaa.xie.repast.service.IRepastService;
 import com.sun.org.apache.regexp.internal.RE;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +20,7 @@ import java.util.Map;
  *  集合查询所有优惠劵及自己的优惠券
  */
 @RestController
+@Api(value = "优惠券信息", tags = "优惠券信息接口(提供优惠券有关操作)")
 public class CouponController extends BaseController {
     @Autowired
     private IRepastService repastService;

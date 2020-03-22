@@ -4,9 +4,14 @@ import com.aaa.xie.repast.base.BaseService;
 import com.aaa.xie.repast.base.CommonController;
 import com.aaa.xie.repast.base.ResultData;
 import com.aaa.xie.repast.model.Order;
+import com.aaa.xie.repast.model.OrderItem;
+import com.aaa.xie.repast.model.Orders;
 import com.aaa.xie.repast.service.OrderService;
+import com.aaa.xie.repast.staticstatus.IsEmpty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -37,10 +42,17 @@ public class OrderController extends CommonController<Order> {
     @PostMapping("/selcetOrder")
     public ResultData selcetOrder(Order order){
         List<Order> orders = orderService.selectOrder(order);
-        if(null==orders.get(0)){
-            return operationFailed();
+        if(IsEmpty.isEmpty(orders)) {
+            return operationSuccess(orders);
         }
-        return operationSuccess(orders);
+            return operationFailed();
+
 
     }
+    @PostMapping("/addOrder")
+    public ResultData addOrder(Orders tmodel, @RequestParam("couponId")Long couponId){
+        return null;
+
+    }
+
 }

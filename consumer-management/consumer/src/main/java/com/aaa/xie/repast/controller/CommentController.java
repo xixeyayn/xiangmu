@@ -4,6 +4,7 @@ import com.aaa.xie.repast.base.BaseController;
 import com.aaa.xie.repast.base.ResultData;
 import com.aaa.xie.repast.page.PageInfos;
 import com.aaa.xie.repast.service.IRepastService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @RestController
+@Api(value = "评价信息", tags = "评价信息接口(提供评价有关操作)")
 public class CommentController extends BaseController {
     @Autowired
     private IRepastService repastService;

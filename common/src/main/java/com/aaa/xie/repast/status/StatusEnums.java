@@ -15,7 +15,8 @@ public enum StatusEnums {
     CLEAR_CART_SUCCESS("5", "清空购物车成功"),
     DELETE_OPERATION("6", "删除操作"),
     UPDATE_OPERATION("7", "修改操作"),
-    INSERT_OPERATION("8", "添加操作");
+    INSERT_OPERATION("8", "添加操作"),
+    LOGIN_FALSE("0","用户未登录");
 
     StatusEnums(String code, String msg) {
         this.code = code;

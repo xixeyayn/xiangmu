@@ -4,8 +4,10 @@ import com.aaa.xie.repast.base.BaseController;
 import com.aaa.xie.repast.base.ResultData;
 import com.aaa.xie.repast.model.MemberStatisticsInfo;
 import com.aaa.xie.repast.service.IRepastService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
@@ -15,6 +17,8 @@ import java.util.Map;
  *  @  描述    :
  *
  */
+@RestController
+@Api(value = "个人详细信息", tags = "个人详细信息接口(提供个人详细信息有关操作)")
 public class MemberStatisticsInfoController extends BaseController {
     @Autowired
     private IRepastService iRepastService;

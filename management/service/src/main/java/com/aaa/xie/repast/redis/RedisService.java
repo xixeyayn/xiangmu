@@ -22,12 +22,12 @@ import static com.aaa.xie.repast.staticstatus.StaticCode.*;
  * @Date Create in 2020/3/13 11:05
  * @Description
  **/
-@Service
+//@Service
 public class RedisService<T> {
 
     private RedisSerializer keySerializer = null;
 
-    @Autowired
+//    @Autowired
     private Jedis jedis;
 
 

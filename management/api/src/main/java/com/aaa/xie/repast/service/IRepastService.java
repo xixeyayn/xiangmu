@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -107,7 +108,7 @@ public interface IRepastService {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/deleteAllAddress")
-    ResultData deleteAllAddress(@RequestBody Integer[] id);
+    ResultData deleteAllAddress(@RequestBody List id);
 
     /*
      * @Author Xie

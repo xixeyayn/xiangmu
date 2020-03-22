@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c8cd61bd-b4f4-483c-b1d5-71c867cecf85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_reflectasm_1_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_client_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_core_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_serialization_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_infix_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_eureka_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_servo_servo_core_0_12_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_10_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_hystrix_10_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_10_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_spring_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_39_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_39_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_39_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_39_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_39_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_39_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_12_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_1_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_reactive_streams_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_persistence_api_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_60.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_60.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_base_1_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_core_1_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_extra_1_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_1_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_autoconfigure_2_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_starter_2_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_weekend_1_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/aaa/xie/repast/staticstatus/IsEmpty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/mapper/src/main/java/com/aaa/xie/repast/mapper/CartItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/mapper/src/main/java/com/aaa/xie/repast/mapper/OrderOperateHistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/mapper/src/main/java/com/aaa/xie/repast/mapper/OrderReturnApplyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/mapper/src/main/java/com/aaa/xie/repast/mapper/OrderReturnReasonMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/mapper/src/main/java/com/aaa/xie/repast/mapper/ProductFullReductionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/mapper/src/main/java/com/aaa/xie/repast/mapper/ProductLadderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/mapper/src/main/resources/mapper/CartItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/mapper/src/main/resources/mapper/OrderOperateHistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/mapper/src/main/resources/mapper/OrderReturnApplyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/mapper/src/main/resources/mapper/OrderReturnReasonMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/mapper/src/main/resources/mapper/ProductFullReductionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/mapper/src/main/resources/mapper/ProductLadderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/model/src/main/java/com/aaa/xie/repast/model/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/model/src/main/java/com/aaa/xie/repast/model/OrderOperateHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/model/src/main/java/com/aaa/xie/repast/model/OrderReturnApply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/model/src/main/java/com/aaa/xie/repast/model/OrderReturnReason.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/model/src/main/java/com/aaa/xie/repast/model/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/model/src/main/java/com/aaa/xie/repast/model/ProductFullReduction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/model/src/main/java/com/aaa/xie/repast/model/ProductLadder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/base/AllBaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/service/CartItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/service/ProductFullReductionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/service/ProductLadderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-management/prividet-8081/src/main/java/com/aaa/xie/repast/controller/CartItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-management/prividet-8081/src/main/java/com/aaa/xie/repast/controller/ProductFullReductionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-management/prividet-8081/src/main/java/com/aaa/xie/repast/controller/ProductLadderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-management/provider-8082/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-management/provider-8082/provider-8082.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/aaa/xie/repast/base/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/aaa/xie/repast/base/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/aaa/xie/repast/staticstatus/StaticCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/aaa/xie/repast/staticstatus/StaticCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/aaa/xie/repast/status/StatusEnums.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/aaa/xie/repast/status/StatusEnums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/aaa/xie/repast/utils/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/aaa/xie/repast/utils/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/aaa/xie/repast/base/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/aaa/xie/repast/base/BaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/aaa/xie/repast/staticstatus/StaticCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/aaa/xie/repast/staticstatus/StaticCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/aaa/xie/repast/status/StatusEnums.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/aaa/xie/repast/status/StatusEnums.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/aaa/xie/repast/utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/aaa/xie/repast/utils/StringUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/java/com/aaa/xie/repast/config/RdisClusterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/java/com/aaa/xie/repast/config/RdisClusterConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/java/com/aaa/xie/repast/config/RedisSingleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/java/com/aaa/xie/repast/config/RedisSingleConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/java/com/aaa/xie/repast/properties/FtpProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/java/com/aaa/xie/repast/properties/FtpProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/java/com/aaa/xie/repast/properties/RedisClusterProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/java/com/aaa/xie/repast/properties/RedisClusterProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/java/com/aaa/xie/repast/properties/RedisSingleProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/java/com/aaa/xie/repast/properties/RedisSingleProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/AddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/CollectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/CollectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/CouponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/CouponController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/MemberLevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/MemberLevelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/MemberStatisticsInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/MemberStatisticsInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-management/consumer/src/main/java/com/aaa/xie/repast/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-management/consumer/target/classes/com/aaa/xie/repast/controller/AddressController.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-management/consumer/target/classes/com/aaa/xie/repast/controller/AddressController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-management/consumer/target/classes/com/aaa/xie/repast/controller/CouponController.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-management/consumer/target/classes/com/aaa/xie/repast/controller/CouponController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-management/consumer/target/classes/com/aaa/xie/repast/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-management/consumer/target/classes/com/aaa/xie/repast/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/api/src/main/java/com/aaa/xie/repast/fallback/RepastFallBackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/management/api/src/main/java/com/aaa/xie/repast/fallback/RepastFallBackFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/api/src/main/java/com/aaa/xie/repast/service/IRepastService.java" beforeDir="false" afterPath="$PROJECT_DIR$/management/api/src/main/java/com/aaa/xie/repast/service/IRepastService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/api/target/classes/com/aaa/xie/repast/service/IRepastService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/src/main/java/com/aaa/xie/repast/mapper/CollectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/management/mapper/src/main/java/com/aaa/xie/repast/mapper/CollectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/src/main/java/com/aaa/xie/repast/mapper/OrderItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/management/mapper/src/main/java/com/aaa/xie/repast/mapper/OrderItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/src/main/java/com/aaa/xie/repast/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/management/mapper/src/main/java/com/aaa/xie/repast/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/src/main/resources/mapper/MemberStatisticsInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/management/mapper/src/main/resources/mapper/MemberStatisticsInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/management/mapper/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/src/main/resources/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/management/mapper/src/main/resources/mapper/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/META-INF/mapper.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/com/aaa/xie/repast/mapper/AddressMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/com/aaa/xie/repast/mapper/CommentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/com/aaa/xie/repast/mapper/CommentReplayMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/com/aaa/xie/repast/mapper/CouponHistoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/com/aaa/xie/repast/mapper/CouponMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/com/aaa/xie/repast/mapper/LoginLogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/com/aaa/xie/repast/mapper/MemberMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/com/aaa/xie/repast/mapper/OrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/mapper/AddressMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/mapper/CommentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/mapper/CommentReplayMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/mapper/CouponHistoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/mapper/CouponMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/mapper/LoginLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/mapper/target/classes/mapper/MemberMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/src/main/java/com/aaa/xie/repast/model/MemberStatisticsInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/management/model/src/main/java/com/aaa/xie/repast/model/MemberStatisticsInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/src/main/java/com/aaa/xie/repast/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/management/model/src/main/java/com/aaa/xie/repast/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/target/classes/META-INF/model.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/target/classes/com/aaa/xie/repast/model/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/target/classes/com/aaa/xie/repast/model/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/target/classes/com/aaa/xie/repast/model/CommentReplay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/target/classes/com/aaa/xie/repast/model/Coupon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/target/classes/com/aaa/xie/repast/model/CouponHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/target/classes/com/aaa/xie/repast/model/LoginLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/target/classes/com/aaa/xie/repast/model/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/target/classes/com/aaa/xie/repast/model/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/target/classes/com/aaa/xie/repast/page/PageInfos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/model/target/classes/com/aaa/xie/repast/test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/base/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/base/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/redis/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/redis/RedisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/service/OrderItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/service/OrderItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/management/service/src/main/java/com/aaa/xie/repast/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/target/classes/com/aaa/xie/repast/base/BaseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/target/classes/com/aaa/xie/repast/service/AddressService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/target/classes/com/aaa/xie/repast/service/CommentReplayService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/target/classes/com/aaa/xie/repast/service/CommentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/target/classes/com/aaa/xie/repast/service/CouponHistoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/target/classes/com/aaa/xie/repast/service/CouponService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/target/classes/com/aaa/xie/repast/service/LoginLogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/target/classes/com/aaa/xie/repast/service/MemberService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/target/classes/com/aaa/xie/repast/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/service/target/classes/com/aaa/xie/repast/util/TimeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider-management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/src/main/java/com/aaa/xie/repast/base/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-management/prividet-8081/src/main/java/com/aaa/xie/repast/base/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/src/main/java/com/aaa/xie/repast/controller/CouponHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-management/prividet-8081/src/main/java/com/aaa/xie/repast/controller/CouponHistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/src/main/java/com/aaa/xie/repast/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-management/prividet-8081/src/main/java/com/aaa/xie/repast/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/target/classes/com/aaa/xie/repast/ApplicationRun8081.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/target/classes/com/aaa/xie/repast/base/CommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/target/classes/com/aaa/xie/repast/controller/AddressController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/target/classes/com/aaa/xie/repast/controller/CommentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/target/classes/com/aaa/xie/repast/controller/CouponController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/target/classes/com/aaa/xie/repast/controller/CouponHistoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/target/classes/com/aaa/xie/repast/controller/LoginLogController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/target/classes/com/aaa/xie/repast/controller/MemberController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/target/classes/com/aaa/xie/repast/controller/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/target/classes/config/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-management/prividet-8081/target/classes/sql/qy_all.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\xie\xiangmu2" />
+        <option value="E:\xie\xiangmu2\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\qy103" />
+        <option name="mavenHome" value="E:/Main/jar/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="E:\Main\jar\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Z1glTVwmNhvgpNCGNxgmbpDfoz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/management/mapper/src/main/resources/mapper" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.aaa.xie.repast.mapper" />
+      <recent name="mapper" />
+      <recent name="com.aaa.xie.repast.model" />
+      <recent name="com.aaa.xie.repast.redis" />
+      <recent name="com.aaa.xie.repast.staticstatus" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xie\xiangmu2\management\mapper\src\main\resources\mapper" />
+      <recent name="E:\xie\xiangmu2\management\model\src\main\java\com\aaa\xie\repast\model" />
+      <recent name="E:\xie\xiangmu2\management\mapper\src\main\java\com\aaa\xie\repast\mapper" />
+      <recent name="E:\xie\xiangmu2\config\src\main\java\com\aaa\xie\repast" />
+      <recent name="E:\xie\xiangmu2\config\src\main\resources\properties" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ApplicationRun8081">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aaa.xie.repast.test.Test" />
+      <module name="model" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aaa.xie.repast.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationRun6081" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aaa.xie.repast.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aaa.xie.repast.ApplicationRun6081" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationRun7081" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="eureka-7081" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aaa.xie.repast.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aaa.xie.repast.ApplicationRun7081" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationRun8081" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="prividet-8081" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aaa.xie.repast.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aaa.xie.repast.ApplicationRun8081" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ApplicationRun8081" />
+        <item itemvalue="Spring Boot.ApplicationRun6081" />
+        <item itemvalue="Spring Boot.ApplicationRun7081" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.14754099" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Xie\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8cd61bd-b4f4-483c-b1d5-71c867cecf85" name="Default Changelist" comment="" />
+      <created>1584012165617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584012165617</updated>
+      <workItem from="1584012171410" duration="8315000" />
+      <workItem from="1584066992998" duration="15850000" />
+      <workItem from="1584181535264" duration="17012000" />
+      <workItem from="1584246299056" duration="14756000" />
+      <workItem from="1584269678462" duration="7466000" />
+      <workItem from="1584319654579" duration="983000" />
+      <workItem from="1584327235377" duration="723000" />
+      <workItem from="1584353100291" duration="6459000" />
+      <workItem from="1584362520872" duration="627000" />
+      <workItem from="1584365442951" duration="2201000" />
+      <workItem from="1584633312574" duration="2477000" />
+      <workItem from="1584636143435" duration="4626000" />
+      <workItem from="1584734235008" duration="9779000" />
+      <workItem from="1584773122892" duration="5817000" />
+      <workItem from="1584778969996" duration="709000" />
+      <workItem from="1584779769837" duration="4354000" />
+      <workItem from="1584839911759" duration="17984000" />
+      <workItem from="1584876957905" duration="717000" />
+    </task>
+    <task id="LOCAL-00001" summary="address测试">
+      <created>1584274767740</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584274767740</updated>
+    </task>
+    <task id="LOCAL-00002" summary="address测试">
+      <created>1584275018468</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584275018468</updated>
+    </task>
+    <task id="LOCAL-00003" summary="address测试">
+      <created>1584275166889</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584275166889</updated>
+    </task>
+    <task id="LOCAL-00004" summary="address测试">
+      <created>1584359662086</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584359662086</updated>
+    </task>
+    <task id="LOCAL-00005" summary="对个人中心的完善">
+      <created>1584743670865</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584743670865</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/../sss" />
+    </ignored-roots>
+    <MESSAGE value="test" />
+    <MESSAGE value="address测试" />
+    <MESSAGE value="对个人中心的完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="对个人中心的完善" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="74" key="#Inspections" timestamp="1584367105649">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="74" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1584367105649" />
+    <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584019615861">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1584019615861" />
+    <state x="2398" y="101" key="#com.intellij.ide.util.MemberChooser" timestamp="1584861778545">
+      <screen x="1920" y="0" width="1280" height="680" />
+    </state>
+    <state x="2398" y="101" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1280.680@1920.0.1280.680" timestamp="1584861778545" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1584843955739" />
+    <state x="369" y="8" key="CommitChangelistDialog2" timestamp="1584877876119">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="369" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584877876119" />
+    <state x="151" y="70" width="1228" height="686" key="DiffContextDialog" timestamp="1584275197369">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="151" y="70" width="1228" height="686" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1584275197369" />
+    <state x="549" y="157" key="FileChooserDialogImpl" timestamp="1584841310612">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584841310612" />
+    <state x="649" y="308" width="259" height="207" key="Github.ShareDialog" timestamp="1584012364153">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="649" y="308" width="259" height="207" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1584012364153" />
+    <state x="422" y="118" key="Github.UntrackedFilesDialog" timestamp="1584012416711">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="422" y="118" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584012416711" />
+    <state width="1247" height="666" key="GridCell.Tab.0.bottom" timestamp="1584784132303">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1247" height="666" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584784132303" />
+    <state width="1247" height="666" key="GridCell.Tab.0.center" timestamp="1584784132303">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1247" height="666" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584784132303" />
+    <state width="1247" height="666" key="GridCell.Tab.0.left" timestamp="1584784132303">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1247" height="666" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584784132303" />
+    <state width="1247" height="666" key="GridCell.Tab.0.right" timestamp="1584784132303">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1247" height="666" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584784132303" />
+    <state width="1247" height="666" key="GridCell.Tab.1.bottom" timestamp="1584784132304">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1247" height="666" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584784132304" />
+    <state width="1247" height="666" key="GridCell.Tab.1.center" timestamp="1584784132303">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1247" height="666" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1584784132303" />
+    <state width="1247" height="666" key="GridCell.Tab.1.left" timestamp="1584784132303">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1247" height="666" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1584784132303" />
+    <state width="1247" height="666" key="GridCell.Tab.1.right" timestamp="1584784132303">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1247" height="666" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1584784132303" />
+    <state width="1247" height="62" key="GridCell.Tab.2.bottom" timestamp="1584784132287">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1247" height="62" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584784132287" />
+    <state width="1247" height="62" key="GridCell.Tab.2.center" timestamp="1584784132286">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1247" height="62" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1584784132286" />
+    <state width="1247" height="62" key="GridCell.Tab.2.left" timestamp="1584784132286">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1247" height="62" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1584784132286" />
+    <state width="1247" height="62" key="GridCell.Tab.2.right" timestamp="1584784132287">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1247" height="62" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1584784132287" />
+    <state x="299" y="71" key="Maven.ArtifactSearchDialog" timestamp="1584264395325">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="71" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1584264395325" />
+    <state x="279" y="58" key="SettingsEditor" timestamp="1584275080470">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584275080469" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1584743690986">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584743690986" />
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1584839911470">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584839911470" />
+    <state x="340" y="18" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584259053357">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="340" y="18" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1584259053357" />
+    <state x="580" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584359636354">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="580" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1584359636354" />
+    <state x="332" y="152" width="1059" height="523" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1584781883772">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="332" y="152" width="1059" height="523" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1584781883772" />
+    <state x="1835" y="72" key="new project wizard" timestamp="1584861373480">
+      <screen x="1920" y="0" width="1280" height="680" />
+    </state>
+    <state x="1835" y="72" key="new project wizard/0.0.1536.824/1920.0.1280.680@1920.0.1280.680" timestamp="1584861373480" />
+    <state x="2274" y="154" key="run.anything.popup" timestamp="1584860743293">
+      <screen x="1920" y="0" width="1280" height="680" />
+    </state>
+    <state x="2274" y="154" key="run.anything.popup/0.0.1536.824/1920.0.1280.680@1920.0.1280.680" timestamp="1584860743293" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584845336508" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584734872668">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584734872668" />
+    <state x="599" y="207" key="svn.repositoryBrowser" timestamp="1584012348969">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="599" y="207" key="svn.repositoryBrowser/0.0.1536.824@0.0.1536.824" timestamp="1584012348969" />
+    <state x="600" y="190" key="svn4idea.import.options" timestamp="1584012320400">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="600" y="190" key="svn4idea.import.options/0.0.1536.824@0.0.1536.824" timestamp="1584012320400" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/provider-management/prividet-8081/src/main/java/com/aaa/xie/repast/controller/AddressController.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((Class)aClass).genericInfo" custom="java.lang.Class" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

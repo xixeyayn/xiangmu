@@ -9,6 +9,7 @@ import com.aaa.xie.repast.model.CouponHistory;
 import com.aaa.xie.repast.service.AddressService;
 import com.aaa.xie.repast.service.CouponHistoryService;
 import com.aaa.xie.repast.service.CouponService;
+import com.aaa.xie.repast.staticstatus.IsEmpty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -43,10 +44,10 @@ public class CouponHistoryController extends CommonController<CouponHistory> {
     @PostMapping("/selcetCouponHistory")
     public ResultData selcetCouponHistoty(CouponHistory couponHistory){
         List<CouponHistory> couponHistories = couponHistoryService.selcetCouponHistoty(couponHistory);
-        if(null==couponHistories.get(0)){
-            return operationFailed();
+        if(IsEmpty.isEmpty(couponHistories)){
+            return operationSuccess(couponHistories);
         }
-        return operationSuccess(couponHistories);
+        return operationFailed();
     }
     /*
      * @Author Xie
@@ -60,9 +61,9 @@ public class CouponHistoryController extends CommonController<CouponHistory> {
     public ResultData addCouponHistoty(CouponHistory couponHistory){
         Boolean aBoolean = couponHistoryService.addCouponHistory(couponHistory);
         if(aBoolean==true){
-            return super.operationSuccess();
+            return operationSuccess();
         }else {
-            return super.operationFailed();
+            return operationFailed();
         }
 
     }

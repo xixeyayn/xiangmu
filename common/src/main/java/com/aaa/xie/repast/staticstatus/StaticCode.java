@@ -51,4 +51,27 @@ public class StaticCode {
     public static final String NO = "NO";
 
 
+    /**
+     * 常量0
+     */
+    public static final Integer ZERO= 0;
+
+    /**
+     * 常量1
+     */
+    public static final Integer ONE= 1;
+    /**
+     * 常量no
+     */
+    /**
+     * 常量no
+     */
+    /**
+     * 常量no
+     */
+    /**
+     * 常量token
+     */
+    public static final String TOKEN="token";
+
 }

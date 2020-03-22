@@ -155,6 +155,21 @@ public abstract class CommonController<T> extends BaseController {
         }
         return operationFailed();
     }
+    /*
+     * @Author Xie
+     * @Description 
+     *       批量修改
+     * @Date 10:47 2020/3/22
+     * @Param [t, list]
+     * @return com.aaa.xie.repast.base.ResultData
+     **/
+    public ResultData batchUpdate(T t,List<Object> list){
+        Integer integer = getBaseService().updateBatch(t, list, null);
+        if(integer > 0) {
+            return operationSuccess();
+        }
+        return operationFailed();
+    }
 
 
 

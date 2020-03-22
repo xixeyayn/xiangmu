@@ -11,13 +11,17 @@ import com.aaa.xie.repast.base.BaseController;
 import com.aaa.xie.repast.base.ResultData;
 import com.aaa.xie.repast.model.Address;
 import com.aaa.xie.repast.service.IRepastService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 
 @RestController
+@Api(value = "地址信息", tags = "地址接口(提供地址有关操作)")
 public class AddressController extends BaseController {
     @Autowired
     private IRepastService repastService;
@@ -60,7 +64,7 @@ public class AddressController extends BaseController {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/deleteAllAddress")
-    public ResultData deleteAllAddress(@RequestBody Integer[] id){
+    public ResultData deleteAllAddress(@RequestBody List id){
         return repastService.deleteAllAddress(id);
     };
     /*

@@ -8,6 +8,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import tk.mybatis.mapper.common.Mapper;
+import tk.mybatis.mapper.common.MySqlMapper;
 import tk.mybatis.mapper.entity.Example;
 import tk.mybatis.mapper.util.Sqls;
 
@@ -15,6 +16,8 @@ import java.lang.reflect.ParameterizedType;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+
+import static com.aaa.xie.repast.staticstatus.StaticCode.ZERO;
 
 /**
  * @Company AAA软件教育
@@ -29,9 +32,25 @@ public abstract class BaseService<T> {
 
     @Autowired
     private Mapper<T> mapper;
+    @Autowired
+    private MySqlMapper<T> mySqlMapper;
 
     protected Mapper getMapper() {
         return mapper;
+    }
+    protected MySqlMapper getMysqlMapper(){
+        return mySqlMapper;
+    }
+/*
+ * @Author Xie
+ * @Description 
+ *       批量添加
+ * @Date 17:09 2020/3/22
+ * @Param [list]
+ * @return java.lang.Integer
+ **/
+    public Integer addBatch(List<T> list){
+        return  getMysqlMapper().insertList(list);
     }
 
     /**
@@ -46,7 +65,17 @@ public abstract class BaseService<T> {
     public Integer add(T t) {
         return getMapper().insertSelective(t);
     }
-
+    /*
+     * @Author Xie
+     * @Description 
+     *       新增返回id
+     * @Date 17:34 2020/3/22
+     * @Param [t]
+     * @return java.lang.Integer
+     **/
+    public Integer addGeneratedId(T t){
+        return getMysqlMapper().insertUseGeneratedKeys(t);
+    }
     /**
      * @author Seven Lee
      * @description
@@ -299,6 +328,7 @@ public abstract class BaseService<T> {
         }
         return cache;
     }
+
 
 
 }

@@ -4,6 +4,7 @@ import com.aaa.xie.repast.base.BaseController;
 import com.aaa.xie.repast.base.ResultData;
 import com.aaa.xie.repast.model.Collect;
 import com.aaa.xie.repast.service.IRepastService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @RestController
+@Api(value = "收藏信息", tags = "收藏信息接口(提供收藏所欲有关操作)")
 public class CollectController extends BaseController {
     @Autowired
     private IRepastService iRepastService;

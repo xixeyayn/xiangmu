@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/management/api/api.iml" filepath="$PROJECT_DIR$/management/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer-management/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer-management/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer-management/consumer-management.iml" filepath="$PROJECT_DIR$/consumer-management/consumer-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-management/eureka-7081/eureka-7081.iml" filepath="$PROJECT_DIR$/eureka-management/eureka-7081/eureka-7081.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-management/eureka-7082/eureka-7082.iml" filepath="$PROJECT_DIR$/eureka-management/eureka-7082/eureka-7082.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-management/eureka-7083/eureka-7083.iml" filepath="$PROJECT_DIR$/eureka-management/eureka-7083/eureka-7083.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-management/eureka-management.iml" filepath="$PROJECT_DIR$/eureka-management/eureka-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/management/management.iml" filepath="$PROJECT_DIR$/management/management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/management/mapper/mapper.iml" filepath="$PROJECT_DIR$/management/mapper/mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/management/model/model.iml" filepath="$PROJECT_DIR$/management/model/model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider-management/prividet-8081/prividet-8081.iml" filepath="$PROJECT_DIR$/provider-management/prividet-8081/prividet-8081.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider-management/provider-8082/provider-8082.iml" filepath="$PROJECT_DIR$/provider-management/provider-8082/provider-8082.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider-management/provider-management.iml" filepath="$PROJECT_DIR$/provider-management/provider-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/management/service/service.iml" filepath="$PROJECT_DIR$/management/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xiangmu2.iml" filepath="$PROJECT_DIR$/xiangmu2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-management/zuul-4081/zuul-4081.iml" filepath="$PROJECT_DIR$/zuul-management/zuul-4081/zuul-4081.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-management/zuul-management.iml" filepath="$PROJECT_DIR$/zuul-management/zuul-management.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,9 +1,16 @@
 package com.aaa.xie.repast.base;
 
+import com.aaa.xie.repast.utils.StringUtil;
+import org.apache.commons.lang3.StringUtils;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.List;
+
+import static com.aaa.xie.repast.staticstatus.StaticCode.ZERO;
 import static com.aaa.xie.repast.status.LoginStatus.LOGIN_FAILED;
 import static com.aaa.xie.repast.status.LoginStatus.LOGIN_SUCCESS;
-import static com.aaa.xie.repast.status.StatusEnums.FAILED;
-import static com.aaa.xie.repast.status.StatusEnums.SUCCESS;
+import static com.aaa.xie.repast.status.StatusEnums.*;
 
 /**
  * @Company AAA软件教育
@@ -208,7 +215,24 @@ public class BaseController {
         resultData.setMsg(msg);
         return resultData;
     }
+    /*
+     * @Author Xie
+     * @Description 
+     *       为登录
+     * @Date 15:10 2020/3/21
+     * @Param []
+     * @return com.aaa.xie.repast.base.ResultData
+     **/
+    protected ResultData memberFailed(){
+        ResultData resultData = new ResultData();
+        resultData.setCode(LOGIN_FALSE.getCode());
+        resultData.setMsg(LOGIN_FALSE.getMsg());
+        return resultData;
+    }
 
-    // TODO 该类未完成，自行完成剩余的方法
+
+
+
+
 
 }

@@ -4,6 +4,8 @@ import org.springframework.util.DigestUtils;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.lang.reflect.Field;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -12,6 +14,7 @@ import java.util.Random;
 public class StringUtil {
     /**
      * MD5
+     *
      * @param str
      * @return
      */
@@ -141,4 +144,7 @@ public class StringUtil {
         throwable.printStackTrace(new PrintWriter(stringWriter));
         return stringWriter.toString();
     }
+
+
 }
+

@@ -4,6 +4,7 @@ import com.aaa.xie.repast.base.BaseController;
 import com.aaa.xie.repast.base.ResultData;
 import com.aaa.xie.repast.model.Order;
 import com.aaa.xie.repast.service.IRepastService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,7 @@ import java.util.Map;
  *
  */
 @RestController
+@Api(value = "订单信息", tags = "订单信息接口(提供订单有关操作)")
 public class OrderController extends BaseController {
     @Autowired
     private IRepastService iRepastService;

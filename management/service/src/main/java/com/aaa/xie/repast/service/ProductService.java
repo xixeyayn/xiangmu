@@ -5,6 +5,7 @@ import com.aaa.xie.repast.mapper.OrderMapper;
 import com.aaa.xie.repast.mapper.ProductMapper;
 import com.aaa.xie.repast.model.Order;
 import com.aaa.xie.repast.model.Product;
+import com.aaa.xie.repast.staticstatus.IsEmpty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.common.Mapper;
@@ -38,4 +39,6 @@ public class ProductService extends BaseService<Product> {
     public Product selectOneProduct(Product product){
         return queryOne(queryOne(product));
     }
+
+
 }
