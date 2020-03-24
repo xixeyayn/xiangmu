@@ -1,9 +1,28 @@
 package com.aaa.xie.repast.model;
 
+import lombok.*;
+import lombok.experimental.Accessors;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Date;
-
+@Table(name = "oms_order_return_apply")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Accessors(chain = true)
+@ToString
+@EqualsAndHashCode
 public class OrderReturnApply {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Size(max = 20)
+    @NotNull
     private Long id;
 
     private Long shopId;

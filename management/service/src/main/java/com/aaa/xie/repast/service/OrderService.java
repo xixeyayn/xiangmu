@@ -3,9 +3,8 @@ package com.aaa.xie.repast.service;
 import com.aaa.xie.repast.base.BaseService;
 import com.aaa.xie.repast.mapper.AddressMapper;
 import com.aaa.xie.repast.mapper.OrderMapper;
-import com.aaa.xie.repast.model.Address;
-import com.aaa.xie.repast.model.Order;
-import com.aaa.xie.repast.model.OrderItem;
+import com.aaa.xie.repast.model.*;
+import com.aaa.xie.repast.redis.RedisService;
 import com.aaa.xie.repast.staticstatus.IsEmpty;
 import com.aaa.xie.repast.utils.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +31,18 @@ public class OrderService extends BaseService<Order> {
     private OrderMapper orderMapper;
     @Autowired
     private OrderItemService orderItemService;
+    @Autowired
+    private OrderOperateHistoryService orderOperateHistoryService;
+    @Autowired
+    private CouponHistoryService couponHistoryService;
+    @Autowired
+    private MemberService memberService;
+    @Autowired
+    private MemberStatisticsInfoService memberStatisticsInfoService;
+    @Autowired
+    private ProductService productService;
+//    @Autowired
+    private RedisService redisService;
 
     @Override
     public Mapper<Order> getMapper() {
@@ -47,26 +58,7 @@ public class OrderService extends BaseService<Order> {
         return orders;
         //
     }
-    public Boolean addOrder(List<OrderItem> list){
-        if(IsEmpty.isEmpty(list)){
-            Order order= new Order();
-            order.setOrderSn(UUID.randomUUID().toString());
-            order.setStatus(0);
-            order.setPayType(0);
-            order.setCreateTime(new Date(FORMAT_DATE));
-            Integer add = addGeneratedId(order);
-            if(IsEmpty.isEmpty(add)){
-                for (OrderItem o : list) {
-                    o.setOrderId(Long.valueOf(add));
-                }
-                Integer integer = orderItemService.addBatch(list);
-            }
-        }
 
-
-
-        return false;
-    }
 
 
 

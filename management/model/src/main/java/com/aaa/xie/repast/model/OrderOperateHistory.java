@@ -1,8 +1,27 @@
 package com.aaa.xie.repast.model;
 
-import java.util.Date;
+import lombok.*;
+import lombok.experimental.Accessors;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+import java.util.Date;
+@Table(name = "oms_order_operate_history")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Accessors(chain = true)
+@ToString
+@EqualsAndHashCode
 public class OrderOperateHistory {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Size(max = 20)
+    @NotNull
     private Long id;
 
     private Long orderId;

@@ -1,5 +1,9 @@
 package com.aaa.xie.repast.model;
 
+import lombok.*;
+import lombok.experimental.Accessors;
+
+import javax.persistence.Table;
 import java.util.List;
 
 /*  @  时间    :  2020/3/22 17:38:25
@@ -8,9 +12,10 @@ import java.util.List;
  *  @  描述    :
  *
  */
-public class Orders<T> {
+
+@Data
+public class Orders {
     private Order order;
-    private OrderItem orderItem;
-    private Coupon coupon;
-    private List<T> list;
+    private CouponHistory couponHistory;
+    private List<OrderItem> orderItem;
 }
