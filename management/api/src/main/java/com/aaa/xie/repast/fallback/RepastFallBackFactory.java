@@ -121,6 +121,56 @@ public class RepastFallBackFactory implements FallbackFactory<IRepastService> {
                 return null;
             }
 
+            @Override
+            public ResultData addCollect(Collect collect) {
+                return null;
+            }
+
+            @Override
+            public ResultData addComment(Comment comment) {
+                return null;
+            }
+
+            @Override
+            public ResultData selectProductFullReduction(ProductFullReduction productFullReduction) {
+                return null;
+            }
+
+            @Override
+            public ResultData selectProductLadder(ProductLadder productLadder) {
+                return null;
+            }
+
+            @Override
+            public ResultData patOrder(Order order) {
+                return null;
+            }
+
+            @Override
+            public ResultData addOrder(Orders orders) {
+                return null;
+            }
+
+            @Override
+            public ResultData selectCartItem(CartItem cartItem) {
+                return null;
+            }
+
+            @Override
+            public ResultData addCartItem(CartItem cartItems) {
+                return null;
+            }
+
+            @Override
+            public ResultData deleteCartItem(List<CartItem> cartItems) {
+                return null;
+            }
+
+            @Override
+            public ResultData updateCartItem(CartItem cartItem) {
+                return null;
+            }
+
 
         };
         return repastService;

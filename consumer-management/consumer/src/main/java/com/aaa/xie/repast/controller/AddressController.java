@@ -12,6 +12,7 @@ import com.aaa.xie.repast.base.ResultData;
 import com.aaa.xie.repast.model.Address;
 import com.aaa.xie.repast.service.IRepastService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -25,9 +26,9 @@ import java.util.List;
 public class AddressController extends BaseController {
     @Autowired
     private IRepastService repastService;
-
+    @ApiOperation(value = "增加", notes = "增加我的收获地址")
     @PostMapping("/addAddress")
-    public ResultData updateAddress(Address address){
+    public ResultData updateAddress(@RequestBody Address address){
         return repastService.addAddress(address);
 
     }
@@ -38,7 +39,7 @@ public class AddressController extends BaseController {
      * @Date 21:11 2020/3/14
      * @Param [address]
      * @return com.aaa.xie.repast.base.ResultData
-     **/
+     **/@ApiOperation(value = "删除", notes = "删除我的收货地址，假删除")
     @PostMapping("/deleteAddress")
     public ResultData deleteAddress(@RequestBody Address address){
         return repastService.deleteAddress(address);
@@ -50,7 +51,7 @@ public class AddressController extends BaseController {
      * @Date 21:13 2020/3/14
      * @Param [address]
      * @return com.aaa.xie.repast.base.ResultData
-     **/
+     **/@ApiOperation(value = "查询", notes = "查询我的收货地址")
     @PostMapping("/selcetAddress")
     public ResultData selcetAddress(@RequestBody Address address){
         return repastService.selcetAddress(address);
@@ -63,6 +64,7 @@ public class AddressController extends BaseController {
      * @Param [memberId]
      * @return com.aaa.xie.repast.base.ResultData
      **/
+    @ApiOperation(value = "删除", notes = "删除选中")
     @PostMapping("/deleteAllAddress")
     public ResultData deleteAllAddress(@RequestBody List id){
         return repastService.deleteAllAddress(id);
@@ -75,6 +77,7 @@ public class AddressController extends BaseController {
      * @Param [memberId]
      * @return com.aaa.xie.repast.base.ResultData
      **/
+    @ApiOperation(value = "修改", notes = "更能该默认地址")
     @PostMapping("/updateAddressStatus")
     public ResultData updateAddresStatus(@RequestBody Address address){
         return repastService.updateAddresStatus(address);

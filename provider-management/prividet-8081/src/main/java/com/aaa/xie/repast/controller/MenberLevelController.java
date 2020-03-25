@@ -4,6 +4,7 @@ import com.aaa.xie.repast.base.BaseController;
 import com.aaa.xie.repast.base.BaseService;
 import com.aaa.xie.repast.base.CommonController;
 import com.aaa.xie.repast.base.ResultData;
+import com.aaa.xie.repast.dynamic.annotation.TDS;
 import com.aaa.xie.repast.mapper.MemberLevelMapper;
 import com.aaa.xie.repast.model.MemberLevel;
 import com.aaa.xie.repast.service.MemberLevelService;
@@ -19,6 +20,7 @@ import java.util.HashMap;
  *  @  描述    :
  *
  */
+@TDS
 public class MenberLevelController extends CommonController<MemberLevel> {
     @Autowired
     private MemberLevelService memberLevelService;

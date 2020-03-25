@@ -1,9 +1,14 @@
 package com.aaa.xie.repast;
 
+import com.aaa.xie.repast.dynamic.datasource.DynamicDataSourceRegister;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
+import org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.annotation.Import;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import tk.mybatis.spring.annotation.MapperScan;
 
@@ -15,7 +20,12 @@ import tk.mybatis.spring.annotation.MapperScan;
  *      @MapperScan:必须要给我添加成tk.mybatis包中的注解
  *      否则项目中所使用的通用mapper无法注入，直接调用报错
  **/
-@SpringBootApplication
+@SpringBootApplication(exclude = {
+        RedisAutoConfiguration.class,
+        RedisRepositoriesAutoConfiguration.class,
+        DataSourceAutoConfiguration.class
+})
+@Import(DynamicDataSourceRegister.class)
 @MapperScan("com.aaa.xie.repast.mapper")
 @EnableDiscoveryClient
 @EnableCircuitBreaker

@@ -6,6 +6,7 @@ import com.aaa.xie.repast.mapper.CouponMapper;
 import com.aaa.xie.repast.model.Coupon;
 import com.aaa.xie.repast.model.CouponProductCategoryRelation;
 import com.aaa.xie.repast.model.CouponProductRelation;
+import com.aaa.xie.repast.redis.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.util.Sqls;
@@ -13,7 +14,7 @@ import tk.mybatis.mapper.util.Sqls;
 import java.util.Date;
 import java.util.List;
 
-import static com.aaa.xie.repast.staticstatus.StaticCode.FORMAT_DATE;
+import static com.aaa.xie.repast.staticstatus.StaticCode.*;
 
 /*  @  时间    :  2020/3/15 13:20:09
  *  @  类名    :  CouponService
@@ -29,21 +30,27 @@ public class CouponService extends BaseService<Coupon> {
     private CouponProductRelationService couponProductRelationService;
     @Autowired
     private CouponProductCategoryRelationService couponProductCategoryRelationService;
+    @Autowired
+    private RedisService redisService;
 /*
  * @Author Xie
  * @Description 
- *       待测试
+ *       只能查通用的
  * @Date 22:07 2020/3/16
  * @Param []
  * @return com.aaa.xie.repast.model.Coupon
  **/
     public List<Coupon> selectCouponByTime(Coupon coupon){
-        coupon.setEndTime(new Date());
-        Sqls sqls=Sqls.custom();
-        sqls.andGreaterThanOrEqualTo("end_time",new Date(FORMAT_DATE));
-        sqls.andLessThanOrEqualTo("start_time",new Date(FORMAT_DATE));
-        List coupon1 = queryListByFields(sqls, null, null);
+        List<Coupon> coupon1=redisService.getList(COUPON);
+        if(coupon1==null){
+            coupon.setEndTime(new Date());
+            List<Coupon> coupons = queryList(coupon);
+            redisService.set(COUPON,coupon,"NX","PX",DAYS);
+            return coupons;
+        }
         return coupon1;
+
+
     }
     /*
      * @Author Xie

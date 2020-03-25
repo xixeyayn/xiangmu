@@ -3,6 +3,7 @@ package com.aaa.xie.repast.controller;
 import com.aaa.xie.repast.base.BaseService;
 import com.aaa.xie.repast.base.CommonController;
 import com.aaa.xie.repast.base.ResultData;
+import com.aaa.xie.repast.dynamic.annotation.TDS;
 import com.aaa.xie.repast.model.Address;
 import com.aaa.xie.repast.model.Member;
 import com.aaa.xie.repast.service.AddressService;
@@ -23,6 +24,7 @@ import java.util.Map;
  *  @  描述    :
  *
  */
+@TDS
 @RestController
 public class AddressController extends CommonController<Address> {
 

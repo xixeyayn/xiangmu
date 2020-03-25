@@ -3,6 +3,7 @@ package com.aaa.xie.repast.controller;
 import com.aaa.xie.repast.base.BaseService;
 import com.aaa.xie.repast.base.CommonController;
 import com.aaa.xie.repast.base.ResultData;
+import com.aaa.xie.repast.dynamic.annotation.TDS;
 import com.aaa.xie.repast.model.LoginLog;
 import com.aaa.xie.repast.service.LoginLogService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import java.util.Map;
  * @Date Create in 2020/3/12 12:01
  * @Description
  **/
+@TDS
 @RestController
 public class LoginLogController extends CommonController<LoginLog> {
 

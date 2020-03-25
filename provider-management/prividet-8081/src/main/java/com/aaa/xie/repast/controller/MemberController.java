@@ -3,6 +3,7 @@ package com.aaa.xie.repast.controller;
 import com.aaa.xie.repast.base.BaseService;
 import com.aaa.xie.repast.base.CommonController;
 import com.aaa.xie.repast.base.ResultData;
+import com.aaa.xie.repast.dynamic.annotation.TDS;
 import com.aaa.xie.repast.model.Member;
 import com.aaa.xie.repast.service.MemberService;
 import com.aaa.xie.repast.utils.Map2BeanUtil;
@@ -20,6 +21,7 @@ import java.util.Map;
  * @Date Create in 2020/3/10 10:53
  * @Description
  **/
+@TDS
 @RestController
 public class MemberController extends CommonController<Member> {
 

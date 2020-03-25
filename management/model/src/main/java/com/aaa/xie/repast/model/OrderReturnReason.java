@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.util.Date;
 @Table(name = "oms_order_return_reason")
 @Data
@@ -17,7 +18,7 @@ import java.util.Date;
 @Accessors(chain = true)
 @ToString
 @EqualsAndHashCode
-public class OrderReturnReason {
+public class OrderReturnReason implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Size(max = 20)

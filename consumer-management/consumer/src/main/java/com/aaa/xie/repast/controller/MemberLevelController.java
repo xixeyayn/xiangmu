@@ -4,6 +4,7 @@ import com.aaa.xie.repast.base.BaseController;
 import com.aaa.xie.repast.base.ResultData;
 import com.aaa.xie.repast.service.IRepastService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,7 +28,9 @@ public class MemberLevelController extends BaseController {
  * @Param []
  * @return com.aaa.xie.repast.base.ResultData
  **/
+
     @PostMapping("/selectMemberLevel")
+    @ApiOperation(value = "查询", notes = "会员的等级划分")
     public ResultData selectMemberLevel(){
         return selectMemberLevel();
     }

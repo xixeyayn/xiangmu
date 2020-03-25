@@ -6,6 +6,7 @@ import lombok.experimental.Accessors;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 @Table(name = "pms_product")
@@ -15,7 +16,7 @@ import java.util.Date;
 @Accessors(chain = true)
 @ToString
 @EqualsAndHashCode
-public class Product {
+public class Product implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Size(max = 20)

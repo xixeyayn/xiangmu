@@ -41,7 +41,7 @@ public class MemberController extends BaseController {
     @PostMapping("/doLogin")
     @ApiOperation(value = "登录", notes = "用户执行登录操作(接收微信端传递数据)")
     @LoginLogAnnotation(operationType = "登录操作", operationName = "普通用户登录")
-    public ResultData doLogin(Member member) {
+    public ResultData doLogin(@RequestBody Member member) {
         // 需要调用api工程(feign)
         Boolean ifSuccess = repastService.doLogin(member);
         if(ifSuccess) {
@@ -49,8 +49,10 @@ public class MemberController extends BaseController {
         }
         return super.loginFailed();
     }
+
     @PostMapping("/updateMember")
-    public ResultData updateMember(Member member){
+    @ApiOperation(value = "修改", notes = "修改用户资料")
+    public ResultData updateMember(@RequestBody Member member){
 
         ResultData resultData = repastService.updateMember(member);
      return resultData;
@@ -63,7 +65,9 @@ public class MemberController extends BaseController {
      * @Param [member]
      * @return com.aaa.xie.repast.base.ResultData
      **/
+
     @PostMapping("/selectMember")
+    @ApiOperation(value = "查询", notes = "查询用户个人基础信息")
     public ResultData selcetMember(@RequestBody Member member){
         return repastService.selcetMember(member);
     }

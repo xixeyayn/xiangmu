@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 @Table(name = "oms_cart_item")
@@ -18,7 +19,7 @@ import java.util.Date;
 @Accessors(chain = true)
 @ToString
 @EqualsAndHashCode
-public class CartItem {
+public class CartItem implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Size(max = 20)

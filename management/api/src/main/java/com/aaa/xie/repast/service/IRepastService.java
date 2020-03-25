@@ -140,7 +140,7 @@ public interface IRepastService {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/selcetCouponHistory")
-    ResultData selcetCouponHistoty(CouponHistory couponHistory);
+    ResultData selcetCouponHistoty(@RequestBody CouponHistory couponHistory);
     /*
      * @Author Xie
      * @Description 
@@ -150,7 +150,7 @@ public interface IRepastService {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/addCouponHistory")
-    ResultData addCouponHistoty(CouponHistory couponHistory);
+    ResultData addCouponHistoty(@RequestBody CouponHistory couponHistory);
     /*
      * @Author Xie
      * @Description 
@@ -170,7 +170,7 @@ public interface IRepastService {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/selcetOrder")
-    ResultData selcetOrder(Order order);
+    ResultData selcetOrder(@RequestBody Order order);
     /*
      * @Author Xie
      * @Description 
@@ -180,7 +180,7 @@ public interface IRepastService {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/selcetCommentById")
-    ResultData selcetCommentById(PageInfos pageInfos);
+    ResultData selcetCommentById(@RequestBody PageInfos pageInfos);
     /*
      * @Author Xie
      * @Description 
@@ -190,7 +190,7 @@ public interface IRepastService {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/selectCollectByMemberId")
-    public ResultData selectCollectByMemberId(Collect collect);
+     ResultData selectCollectByMemberId(@RequestBody Collect collect);
     /*
      * @Author Xie
      * @Description 
@@ -200,7 +200,7 @@ public interface IRepastService {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/updateCollectByMemberId")
-    public ResultData updateCollectByMemberId(Collect collect);
+     ResultData updateCollectByMemberId(@RequestBody Collect collect);
     /*
      * @Author Xie
      * @Description 
@@ -210,7 +210,7 @@ public interface IRepastService {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/selectMemberLevel")
-    public ResultData selectMemberLevel();
+     ResultData selectMemberLevel();
     /*
      * @Author Xie
      * @Description 
@@ -220,5 +220,25 @@ public interface IRepastService {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/selectmemberStatisticsInfoByMemberId")
-    public ResultData selectmemberStatisticsInfoByMemberId(MemberStatisticsInfo memberStatisticsInfo);
+     ResultData selectmemberStatisticsInfoByMemberId(@RequestBody MemberStatisticsInfo memberStatisticsInfo);
+    @PostMapping("/addCollect")
+     ResultData addCollect(@RequestBody Collect collect);
+    @PostMapping("/addComment")
+     ResultData addComment(@RequestBody Comment comment);
+    @PostMapping("/selectProductFullReduction")
+     ResultData selectProductFullReduction(@RequestBody ProductFullReduction productFullReduction);
+    @PostMapping("/selectProductLadder")
+     ResultData selectProductLadder(@RequestBody ProductLadder productLadder);
+    @PostMapping("/payOrder")
+    public ResultData patOrder(@RequestBody Order order);
+    @PostMapping("/addOrder")
+    public ResultData addOrder(@RequestBody Orders orders);
+    @PostMapping("/selectCartItem")
+    public ResultData selectCartItem(@RequestBody CartItem cartItem);
+    @PostMapping("/addCartItem")
+    public ResultData addCartItem(@RequestBody CartItem cartItems);
+    @PostMapping("/deleteCartItem")
+    public ResultData deleteCartItem(@RequestBody List<CartItem> cartItems);
+    @PostMapping("/updateCartItem")
+    public ResultData updateCartItem(@RequestBody CartItem cartItem);
 }

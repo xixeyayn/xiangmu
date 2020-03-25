@@ -5,8 +5,10 @@ import com.aaa.xie.repast.base.ResultData;
 import com.aaa.xie.repast.model.MemberStatisticsInfo;
 import com.aaa.xie.repast.service.IRepastService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
@@ -30,8 +32,10 @@ public class MemberStatisticsInfoController extends BaseController {
      * @Param [memberStatisticsInfo]
      * @return com.aaa.xie.repast.base.ResultData
      **/
+
     @PostMapping("/selectmemberStatisticsInfoByMemberId")
-    public ResultData selectmemberStatisticsInfoByMemberId(MemberStatisticsInfo memberStatisticsInfo){
+    @ApiOperation(value = "查询", notes = "查询用户详细信息")
+    public ResultData selectmemberStatisticsInfoByMemberId(@RequestBody MemberStatisticsInfo memberStatisticsInfo){
         return iRepastService.selectmemberStatisticsInfoByMemberId(memberStatisticsInfo);
     }
 }

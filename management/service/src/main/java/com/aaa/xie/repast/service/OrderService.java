@@ -10,6 +10,7 @@ import com.aaa.xie.repast.utils.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.RequestBody;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.Date;
@@ -31,23 +32,18 @@ public class OrderService extends BaseService<Order> {
     private OrderMapper orderMapper;
     @Autowired
     private OrderItemService orderItemService;
-    @Autowired
-    private OrderOperateHistoryService orderOperateHistoryService;
-    @Autowired
-    private CouponHistoryService couponHistoryService;
-    @Autowired
-    private MemberService memberService;
-    @Autowired
-    private MemberStatisticsInfoService memberStatisticsInfoService;
-    @Autowired
-    private ProductService productService;
-//    @Autowired
-    private RedisService redisService;
-
     @Override
     public Mapper<Order> getMapper() {
         return orderMapper;
     }
+/*
+ * @Author Xie
+ * @Description 
+ *       查询订单包括商品
+ * @Date 19:36 2020/3/24
+ * @Param * @param null: 
+ * @return * @return: null
+ **/
 
     public List<Order> selectOrder(Order order){
         List<Order> orders = queryList(order);
@@ -57,6 +53,10 @@ public class OrderService extends BaseService<Order> {
 //        List<Order> orders1 = orderMapper.selectOrderByMemberId(order);
         return orders;
         //
+    }
+
+    public Integer insertSelective(Order order){
+        return orderMapper.insertSelective(order);
     }
 
 

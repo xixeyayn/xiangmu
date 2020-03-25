@@ -11,10 +11,10 @@ import org.springframework.stereotype.Component;
  * @Date Create in 2020/3/17 10:05
  * @Description
  **/
-//@Component
-//@PropertySource("classpath:properties/ftp.properties")
-//@ConfigurationProperties(prefix = "spring.ftp")
-//@Data
+@Component
+@PropertySource("classpath:properties/ftp.properties")
+@ConfigurationProperties(prefix = "spring.ftp")
+@Data
 public class FtpProperties {
 
     private String host;

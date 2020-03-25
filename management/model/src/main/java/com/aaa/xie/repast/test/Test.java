@@ -75,5 +75,17 @@ public class Test {
 //     System.out.println(StringUtil.isNull(collect));
 ////        System.out.println(collect.toString());
 //            Object o = new Object();
+        Vector v = new Vector();
+        for (char a ='A';a<='F';a++) {
+            v.add(a);
+        }
+        for (int i = 0; i <3 ; i++) {
+
+
+            Object a = v.remove(new Random().nextInt(6-i));
+            System.out.println(a);
+        }
+
     }
+
 }

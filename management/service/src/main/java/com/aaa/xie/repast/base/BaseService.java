@@ -1,6 +1,7 @@
 package com.aaa.xie.repast.base;
 
 import com.aaa.xie.repast.page.PageInfos;
+import com.aaa.xie.repast.staticstatus.IsEmpty;
 import com.aaa.xie.repast.utils.JSONUtil;
 import com.aaa.xie.repast.utils.Map2BeanUtil;
 import com.alibaba.fastjson.JSON;
@@ -8,7 +9,6 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import tk.mybatis.mapper.common.Mapper;
-import tk.mybatis.mapper.common.MySqlMapper;
 import tk.mybatis.mapper.entity.Example;
 import tk.mybatis.mapper.util.Sqls;
 
@@ -32,14 +32,9 @@ public abstract class BaseService<T> {
 
     @Autowired
     private Mapper<T> mapper;
-    @Autowired
-    private MySqlMapper<T> mySqlMapper;
 
     protected Mapper getMapper() {
         return mapper;
-    }
-    protected MySqlMapper getMysqlMapper(){
-        return mySqlMapper;
     }
 /*
  * @Author Xie
@@ -50,7 +45,12 @@ public abstract class BaseService<T> {
  * @return java.lang.Integer
  **/
     public Integer addBatch(List<T> list){
-        return  getMysqlMapper().insertList(list);
+        Integer a=1;
+        for (T t: list) {
+            int i = getMapper().insertSelective(t);
+            if(IsEmpty.isEmpty(i))a=0;
+        }
+        return  a;
     }
 
     /**
@@ -73,9 +73,7 @@ public abstract class BaseService<T> {
      * @Param [t]
      * @return java.lang.Integer
      **/
-    public Integer addGeneratedId(T t){
-        return getMysqlMapper().insertUseGeneratedKeys(t);
-    }
+
     /**
      * @author Seven Lee
      * @description

@@ -1,6 +1,5 @@
 package com.aaa.xie.repast.service;
 
-import com.aaa.xie.repast.mapper.OrderMapper;
 import com.aaa.xie.repast.model.*;
 import com.aaa.xie.repast.redis.RedisService;
 import com.aaa.xie.repast.staticstatus.IsEmpty;
@@ -18,7 +17,7 @@ import static com.aaa.xie.repast.staticstatus.StaticCode.FORMAT_DATE;
  *  @  类名    :  Orders
  *  @  创建人  :  Xie
  *  @  描述    :
- *
+ *      未解决   个人统计信息，定时触发的支付失败退货
  */
 @Service
 public class OrdersService {
@@ -51,12 +50,12 @@ public class OrdersService {
  * @return * @return: null
  **/
 
-    public  Integer  addOrder (Orders orders){
+    public  Boolean  addOrder (Orders orders){
         List<OrderItem> orderItem = orders.getOrderItem();
         Order order = orders.getOrder();
         CouponHistory coupon = orders.getCouponHistory();
         try {
-            synchronized(OrderService.class){
+
                 if(IsEmpty.isEmpty(orderItem)&&IsEmpty.isEmpty(coupon)&&IsEmpty.isEmpty(order)){
                     List<CouponHistory> couponHistories = couponHistoryService.selcetCouponHistoty(coupon);
                     coupon=couponHistories.get(0);
@@ -69,7 +68,11 @@ public class OrdersService {
                     order.setSourceType(1);
                     order.setCouponAmount(coupon.getCoupon().getAmount());
                     order.setCreateTime(new Date(FORMAT_DATE));
-                    Integer add = orderService.addGeneratedId(order);
+                    Integer add =0;
+                    synchronized(OrderService.class){
+                        add=orderService.insertSelective(order);
+                    }
+
                     if(IsEmpty.isEmpty(add)){
                         for (OrderItem o : orderItem) {
                             o.setOrderId(Long.valueOf(add));
@@ -87,18 +90,32 @@ public class OrdersService {
                                     orderOperateHistory.setOrderStatus(0);
                                     orderOperateHistory.setOrderId(order.getId());
                                     orderOperateHistory.setShopId(order.getShopId());
+                                    for (OrderItem o:order.getOrderItem()) {
+                                        Product product = new Product();
+                                        product.setId(o.getProductId());
+                                        product=productService.selectOneProduct(product);
+                                        Integer stock = product.getLowStock();
+                                        Integer productQuantity = o.getProductQuantity();
+                                        if(stock>=productQuantity){
+                                            product.setLowStock(stock=productQuantity);
+                                        }else {
+                                            throw new Exception();
+                                        }
+                                    }
                                     if(IsEmpty.isEmpty(orderOperateHistoryService.addOrderOperateHistory(orderOperateHistory))){
                                         redisService.set(order.getMemberId().toString(),order.getMemberId(),"NX","PX",900);
+                                        //这里放入redis
+                                        redisService.set(order.getId().toString(),order,"NX","PX",90000);
                                         if(payOrder(null,orders)){
-                                            return 0;
+                                            return false;
                                         }else {
-                                            return 1;
+
+                                            return true;
                                         }
                                     }
                                 }
                             }
 
-                        }
                     }
                 }
             }
@@ -106,7 +123,7 @@ public class OrdersService {
         }catch (Exception e){
             e.printStackTrace();
         }
-        return 2;
+        return null;
     }
     /*
      * @Author Xie
@@ -128,6 +145,7 @@ public class OrdersService {
                 couponHistory.setOrderId(order.getId());
                 couponHistoryService.selcetCouponHistoty(couponHistory);
                 orders.setCouponHistory(couponHistory);
+
                 return orders;
             }
         }
@@ -142,20 +160,27 @@ public class OrdersService {
  * @return java.lang.Boolean
  **/
     public Boolean payOrder(Order order,Orders orders){
+
         try {
-            synchronized (OrdersService.class){
+
                 Date date = new Date(FORMAT_DATE);
                 if(!IsEmpty.isEmpty(orders)){
-                    orders= selectOrderZt(order);
-                    if(null==orders) throw new Exception();
+
+//                    这里应该从reids里面查
+                    orders= (Orders) redisService.getObject(order.getId().toString());
+                    if(!IsEmpty.isEmpty(orders))orders =selectOrderZt(order);
+                    if(!IsEmpty.isEmpty(orders)) throw new Exception();
                 }
                 order=orders.getOrder();
                 BigDecimal payAmount = order.getPayAmount();
 
                 String string = redisService.getString(order.getMemberId().toString());
+
                 if(IsEmpty.isEmpty(string)){
-                    //调用微信支付
-                    if(true){
+                    synchronized (OrdersService.class) {
+                        //调用微信支付
+
+                    }if(true){
                         order.setPayType(2);
                         order.setReceiveTime(date);
                         order.setModifyTime(date);
@@ -163,6 +188,23 @@ public class OrdersService {
                             order.setStatus(1);
                         }else if(order.getFlag()==2){
                             order.setStatus(2);
+                        }
+                        CouponHistory couponHistory = orders.getCouponHistory();
+                        List<OrderItem> orderItem = orders.getOrderItem();
+
+
+                        for (OrderItem o:orderItem) {
+                            Product product = new Product();
+                            product.setId(o.getProductId());
+                            product=productService.selectOneProduct(product);
+                            Integer stock = product.getStock();
+                            Integer productQuantity = o.getProductQuantity();
+                            if(stock>=productQuantity){
+                                product.setStock(stock-productQuantity);
+                            }else {
+                                throw new Exception();
+                            }
+
                         }
                         if(IsEmpty.isEmpty(orderService.update(order))){
                             Member member = new Member();
@@ -179,6 +221,19 @@ public class OrdersService {
                     }else {
                         if(order.getStatus()==4){
                             order.setModifyTime(date);
+                            for (OrderItem o:orders.getOrderItem()) {
+                                Product product = new Product();
+                                product.setId(o.getProductId());
+                                product=productService.selectOneProduct(product);
+                                Integer stock = product.getStock();
+                                Integer productQuantity = o.getProductQuantity();
+                                if(stock>=productQuantity){
+                                    product.setStock(stock+productQuantity);
+                                }else {
+                                    throw new Exception();
+                                }
+
+                            }
                             CouponHistory couponHistory = orders.getCouponHistory();
                             couponHistory.setUseStatus(0);
                             couponHistory.setUseTime(null);
@@ -190,7 +245,7 @@ public class OrdersService {
                         }
 
                     }
-                }
+
             }
             throw new Exception();
         }catch (Exception e){
@@ -198,4 +253,5 @@ public class OrdersService {
         }
 return null;
     }
+
 }

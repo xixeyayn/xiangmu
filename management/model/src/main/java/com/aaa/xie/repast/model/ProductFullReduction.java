@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.math.BigDecimal;
 @Table(name = "pms_product_dull_reduction")
 @Data
@@ -17,7 +18,7 @@ import java.math.BigDecimal;
 @Accessors(chain = true)
 @ToString
 @EqualsAndHashCode
-public class ProductFullReduction {
+public class ProductFullReduction implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Size(max = 20)

@@ -37,7 +37,14 @@ public class OrderItemService extends BaseService<OrderItem> {
         List<OrderItem> orderItems = queryList(orderItem);
         for (OrderItem o:orderItems) {
             Product product = new Product();
-            o.setProduct(productService.selectOneProduct( product.setId(o.getProductId())));
+            product.setId(o.getProductId());
+            try {
+                product = productService.selectOneProduct(product);
+                o.setProduct(product);
+            }catch (Exception e){
+
+            }
+
         }
         return orderItems;
     }

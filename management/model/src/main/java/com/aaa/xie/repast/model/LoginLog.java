@@ -4,6 +4,8 @@ import lombok.*;
 import lombok.experimental.Accessors;
 
 import javax.persistence.*;
+import java.io.Serializable;
+
 /**
  * @Author Xie
  * @Description
@@ -19,7 +21,7 @@ import javax.persistence.*;
 @Accessors(chain = true)
 @ToString
 @EqualsAndHashCode
-public class LoginLog {
+public class LoginLog implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -27,10 +29,10 @@ public class LoginLog {
     @Column(name = "shop_id")
     private Long shopId;
 
-    @Column(name = "member_id")
+
     private Long memberId;
 
-    @Column(name = "create_time")
+
     private String createTime;
 
     private String ip;

@@ -3,10 +3,12 @@ package com.aaa.xie.repast.controller;
 import com.aaa.xie.repast.base.BaseService;
 import com.aaa.xie.repast.base.CommonController;
 import com.aaa.xie.repast.base.ResultData;
+import com.aaa.xie.repast.dynamic.annotation.TDS;
 import com.aaa.xie.repast.model.MemberStatisticsInfo;
 import com.aaa.xie.repast.service.MemberStatisticsInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Map;
 
@@ -16,6 +18,7 @@ import java.util.Map;
  *  @  描述    :
  *
  */
+@TDS
 public class MemberStatisticsInfoController extends CommonController<MemberStatisticsInfo> {
     @Autowired
     private MemberStatisticsInfoService memberStatisticsInfoService;
@@ -32,7 +35,7 @@ public class MemberStatisticsInfoController extends CommonController<MemberStati
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/selectmemberStatisticsInfoByMemberId")
-    public ResultData selectmemberStatisticsInfoByMemberId(Map memberStatisticsInfo){
+    public ResultData selectmemberStatisticsInfoByMemberId(@RequestBody Map memberStatisticsInfo){
         return selcet(memberStatisticsInfo);
     }
 }

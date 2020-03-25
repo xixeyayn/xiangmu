@@ -3,6 +3,7 @@ package com.aaa.xie.repast.controller;
 import com.aaa.xie.repast.base.BaseService;
 import com.aaa.xie.repast.base.CommonController;
 import com.aaa.xie.repast.base.ResultData;
+import com.aaa.xie.repast.dynamic.annotation.TDS;
 import com.aaa.xie.repast.model.Address;
 import com.aaa.xie.repast.model.Coupon;
 import com.aaa.xie.repast.model.CouponHistory;
@@ -12,6 +13,7 @@ import com.aaa.xie.repast.service.CouponService;
 import com.aaa.xie.repast.staticstatus.IsEmpty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -24,6 +26,7 @@ import java.util.Map;
  *  @  描述    :
  *
  */
+@TDS
 @RestController
 public class CouponHistoryController extends CommonController<CouponHistory> {
     @Autowired
@@ -42,7 +45,7 @@ public class CouponHistoryController extends CommonController<CouponHistory> {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/selcetCouponHistory")
-    public ResultData selcetCouponHistoty(CouponHistory couponHistory){
+    public ResultData selcetCouponHistoty(@RequestBody CouponHistory couponHistory){
         List<CouponHistory> couponHistories = couponHistoryService.selcetCouponHistoty(couponHistory);
         if(IsEmpty.isEmpty(couponHistories)){
             return operationSuccess(couponHistories);
@@ -58,7 +61,7 @@ public class CouponHistoryController extends CommonController<CouponHistory> {
      * @return com.aaa.xie.repast.base.ResultData
      **/
     @PostMapping("/addCouponHistory")
-    public ResultData addCouponHistoty(CouponHistory couponHistory){
+    public ResultData addCouponHistoty(@RequestBody CouponHistory couponHistory){
         Boolean aBoolean = couponHistoryService.addCouponHistory(couponHistory);
         if(aBoolean==true){
             return operationSuccess();

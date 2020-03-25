@@ -5,9 +5,13 @@ import com.aaa.xie.repast.base.ResultData;
 import com.aaa.xie.repast.model.Collect;
 import com.aaa.xie.repast.service.IRepastService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
 
 /*  @  时间    :  2020/3/16 19:19:53
  *  @  类名    :  CollectController
@@ -28,8 +32,9 @@ public class CollectController extends BaseController {
      * @Param [collect]
      * @return com.aaa.xie.repast.base.ResultData
      **/
+    @ApiOperation(value = "查询", notes = "查询我的收藏")
     @PostMapping("/selectCollectByMemberId")
-    public ResultData selectCollectByMemberId(Collect collect){
+    public ResultData selectCollectByMemberId(@RequestBody Collect collect){
         return iRepastService.selectCollectByMemberId(collect);
     }
     /*
@@ -40,8 +45,16 @@ public class CollectController extends BaseController {
      * @Param [collect]
      * @return com.aaa.xie.repast.base.ResultData
      **/
+    @ApiOperation(value = "修改", notes = "修改我的收藏s")
     @PostMapping("/updateCollectByMemberId")
-    public ResultData updateCollectByMemberId(Collect collect){
+    public ResultData updateCollectByMemberId(@RequestBody Collect collect){
         return iRepastService.updateCollectByMemberId(collect);
     }
+    @ApiOperation(value = "增加", notes = "修改我的收藏s")
+    @PostMapping("/addCollect")
+    public ResultData addCollect(@RequestBody Collect collect){
+        return iRepastService.addCollect(collect);
+    }
+
+
 }

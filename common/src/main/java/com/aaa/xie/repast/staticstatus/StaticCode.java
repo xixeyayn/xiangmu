@@ -18,8 +18,9 @@ public class StaticCode {
     public static final String TEST_IP = "222.137.210.39";
     public static final Integer HOUS=3600;
     public static final Integer MINUTES=60;
-    public static final Integer DAYS=84600;
+    public static final Integer DAYS=24*60*1000;
     public static final Integer PAGESIZE=10;
+    public static final Integer TIMEPAY=15*60*1000;
     /**
      * 常量nx
      */
@@ -73,5 +74,8 @@ public class StaticCode {
      * 常量token
      */
     public static final String TOKEN="token";
+
+    public static final String COUPON="coupon";
+
 
 }
